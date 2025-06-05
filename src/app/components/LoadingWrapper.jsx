@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import Loading from "./Loading"; // ✅ Import Loading Component
+import Loading from "./Loading";
 
 export default function LoadingWrapper({ children }) {
   const [isLoading, setIsLoading] = useState(true);
