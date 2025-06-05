@@ -104,7 +104,7 @@ export function CounterSection() {
                   10<sup>+</sup>
                 </h2>
                 <div className="text">
-                  <h3>years of seo & brand experience</h3>
+                  <p className="text-2">years of seo & brand experience</p>
                 </div>
               </div>
               <div className="box2 sm3" ref={boxLeftRef2}>
@@ -112,7 +112,7 @@ export function CounterSection() {
                   100<sup>+</sup>
                 </h2>
                 <div className="text">
-                  <h3>video & drone projects delivered</h3>
+                  <p className="text-2">websites developed</p>
                 </div>
               </div>
             </div>
@@ -123,7 +123,7 @@ export function CounterSection() {
                   25<sup>+</sup>
                 </h2>
                 <div className="text">
-                  <h3>brands repositioned</h3>
+                  <p className="text-2">brands repositioned</p>
                 </div>
               </div>
 
@@ -132,7 +132,7 @@ export function CounterSection() {
                   1<sup></sup>
                 </h2>
                 <div className="text">
-                  <h3>goal your growth</h3>
+                  <p className="text-2">goal your growth</p>
                 </div>
               </div>
             </div>

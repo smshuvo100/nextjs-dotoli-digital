@@ -43,36 +43,48 @@ export function NewsTracker() {
     },
     { scope: newsTrackerRef }
   );
-
+  /* seo . branding . website development . seo . branding . website development
+  seo . branding . website development
+  */
   return (
     <section className="news-tracker" ref={newsTrackerRef}>
       <div className="ticker" ref={track1Ref}>
         <h2 className="ticker__run title-3">
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
         </h2>
       </div>
 
       <div className="ticker arabic" ref={track2Ref}>
         <h2 className="ticker__run title-3">
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
-          <span>struggling to get leads? → seo. branding. video. let's fix that.</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
+          <span>seo . branding . website development</span>
         </h2>
       </div>
     </section>

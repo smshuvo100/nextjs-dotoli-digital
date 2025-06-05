@@ -1,10 +1,11 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 
-export function WhoWeAre({ title1, title2, description, paragraph, btn_text, btn_link }) {
+export function WhoWeAre({ title1, title2, paragraph, btn_text, btn_link }) {
   const whoWeAreRef = useRef(null);
   const text1Ref = useRef(null);
   const text2Ref = useRef(null);
@@ -64,22 +65,23 @@ export function WhoWeAre({ title1, title2, description, paragraph, btn_text, btn
                   {title2}
                 </span>
               </h3>
+              <div className="box1">
+                <p className="text-1" dangerouslySetInnerHTML={{ __html: paragraph }} />
 
-              <p className="text-3"></p>
-              <p className="text-3" dangerouslySetInnerHTML={{ __html: description }} />
+                {btn_link ? (
+                  <div className="btn">
+                    <Link href={btn_link}>{btn_text}</Link>
+                  </div>
+                ) : (
+                  ""
+                )}
+              </div>
             </div>
           </div>
           <div className="right-text">
-            <div className="box1">
-              <p className="text-1" dangerouslySetInnerHTML={{ __html: paragraph }} />
-
-              {btn_link ? (
-                <div className="btn">
-                  <Link href={btn_link}>{btn_text}</Link>
-                </div>
-              ) : (
-                ""
-              )}
+            <div className="img-box">
+              {/* kimg */}
+              <Image src="/images/kimg.png" alt="loftloom" width={300} height={300} />
             </div>
           </div>
         </div>

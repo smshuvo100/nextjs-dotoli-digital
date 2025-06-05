@@ -115,10 +115,10 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
           </div>
           <div className="btn-group">
             <div className="btn" ref={btn1Ref}>
-              <Link href="/about">View Our Work</Link>
+              <Link href="/about">view our project</Link>
             </div>
             <div className="btn" ref={btn2Ref}>
-              <Link href="/about">Start Your Project</Link>
+              <Link href="/about">start your project</Link>
             </div>
           </div>
         </div>

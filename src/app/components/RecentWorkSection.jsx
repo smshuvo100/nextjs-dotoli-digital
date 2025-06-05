@@ -67,7 +67,9 @@ export function RecentWorkSection() {
               </h3>
 
               <p className="text-2">
-                We help consultants, agencies, trades, and local service brands gain visibility and convert attention into action. Every strategy we create blends three powerful elements:
+                We help consultants, agencies, trades, and local service
+                <br /> brands gain visibility and convert attention into action.
+                <br /> Every strategy we create blends three powerful elements:
                 <br />
               </p>
             </div>

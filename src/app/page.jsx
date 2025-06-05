@@ -19,13 +19,14 @@ export default function Home() {
       <HeroSection />
       <VideoSection />
       <RecentWorkSection />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <RightImgSection title={"technical seo"} description={"Improve your rankings with clean, fast, search-optimized foundations."} images={"loftloom-main-landscape.webp"} />
       <LeftImgSection />
-      <RightImgSection
-        title={"video & drone content "}
-        description={"Stand out with cinematic, story-driven visuals designed to educate, impress, and convert."}
-        images={"technis-main-landscape.webp"}
-      />
+      <RightImgSection title={"website development"} description={"Custom-designed, mobile-friendly, and SEO-ready websites that grow with your business."} images={"technis-main-landscape.webp"} />
       <WhoWeAre
         title1={"work that"}
         title2={"performs"}
@@ -40,7 +41,6 @@ export default function Home() {
       <WhoWeAre
         title1={"who"}
         title2={"we are"}
-        description={`Market Target is a results-driven digital<br /> partner for service-based businesses.<br /> Our team brings together SEO engineers,<br /> brand designers, content strategists,<br /> and drone video pros — all working<br /> toward one goal: helping you grow.`}
         paragraph={`We don’t do fluff. We do focused,<br /> aligned digital marketing that drives visibility,<br /> trust, and leads.`}
         btn_text={"Meet the Team"}
         btn_link={"/about"}
@@ -50,7 +50,7 @@ export default function Home() {
       <ClientTestimonial />
       <NewsTracker />
       <DribbbleSection />
-      <JungleSection title1={"join our"} title2={"jungle"} title3={"trek"} />
+      <JungleSection title1={"join our"} title2={"in your"} title3={"journey"} />
       <SocialSection />
     </>
   );
