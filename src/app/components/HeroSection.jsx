@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Link from "next/link";
+
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
