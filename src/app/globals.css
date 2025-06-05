@@ -93,7 +93,6 @@ h6 span {
 .title-1 {
   font-size: 100px;
   line-height: 90px;
-  text-transform: lowercase;
 }
 .title-2 {
   font-size: 68px;
@@ -337,7 +336,7 @@ menu
 .header-wrapper .menu-button span {
   font-size: 15px;
   font-family: var(--font-softype), sans-serif;
-  text-transform: lowercase;
+
   line-height: 15px;
   position: relative;
   top: 1px;
@@ -764,7 +763,6 @@ section.hero-wrapper h1.title-1.text-center {
 .counter-sec .flex-box .box2 h3 {
   font-size: 38px;
   line-height: 34px;
-  text-transform: lowercase;
   font-weight: 400;
   max-width: 250px;
   text-align: right;

@@ -59,17 +59,17 @@ export function RecentWorkSection() {
             <div className="text">
               <h3 className="title-3 text-left">
                 <span className="block sm1" ref={text1Ref}>
-                  what
+                  WHAT
                 </span>
                 <span className="block sm2" ref={text2Ref}>
-                  we do
+                  WE DO
                 </span>
               </h3>
 
               <p className="text-2">
-                We help consultants, agencies, trades, and local service
-                <br /> brands gain visibility and convert attention into action.
-                <br /> Every strategy we create blends three powerful elements:
+                We help consultants, agencies, trades, and local service brands
+                <br /> gain visibility and convert attention into action. Every strategy
+                <br /> we create blends three powerful elements:
                 <br />
               </p>
             </div>

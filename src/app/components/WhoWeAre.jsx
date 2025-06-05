@@ -77,11 +77,12 @@ export function WhoWeAre({ title1, title2, paragraph, btn_text, btn_link }) {
                 )}
               </div>
             </div>
-          </div>
-          <div className="right-text">
-            <div className="img-box">
-              {/* kimg */}
-              <Image src="/images/kimg.png" alt="loftloom" width={300} height={300} />
+
+            <div className="right-text">
+              <div className="img-box">
+                {/* kimg */}
+                <Image src="/images/kimg.png" alt="loftloom" width={300} height={300} />
+              </div>
             </div>
           </div>
         </div>

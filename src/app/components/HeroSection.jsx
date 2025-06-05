@@ -92,17 +92,15 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
         <div className="container">
           <h1 className="title-1 text-center">
             <span ref={title1Ref} className="block">
-              Build Bold Brands.
+              AI-POWERED MARKETING
             </span>
             <span ref={title2Ref} className="block">
-              Design Smart Websites.
+              FOR VISIONARY BRANDS.
             </span>
           </h1>
           <div className="text" ref={textRef}>
             <p className="text-center">
-              At Dotoli Digital, we transform ideas into stunning visual identities and high-converting
-              <br /> websites. Whether you're a startup or scaling brand, we help you
-              <br /> stand out and sell smarter. CTA Buttons:
+              Elevating businesses with bespoke digital solutions, advanced AI, <br /> and unparalleled creativity - from Florida to the world.
               <br />
             </p>
             <div>
@@ -115,10 +113,10 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
           </div>
           <div className="btn-group">
             <div className="btn" ref={btn1Ref}>
-              <Link href="/about">view our project</Link>
+              <Link href="/about">SCHEDULE YOUR PRIVATE CONSULTATION</Link>
             </div>
             <div className="btn" ref={btn2Ref}>
-              <Link href="/about">start your project</Link>
+              <Link href="/about">REQUEST A PROPOSAL</Link>
             </div>
           </div>
         </div>

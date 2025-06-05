@@ -25,23 +25,35 @@ export default function Home() {
       <br />
       <br />
       <RightImgSection title={"technical seo"} description={"Improve your rankings with clean, fast, search-optimized foundations."} images={"loftloom-main-landscape.webp"} />
-      <LeftImgSection />
+
+      <LeftImgSection title={"brand development"} description={"Build a cohesive, trustworthy identity that clients remember."} images={"imusic-main-landscape.webp"} />
+
       <RightImgSection title={"website development"} description={"Custom-designed, mobile-friendly, and SEO-ready websites that grow with your business."} images={"technis-main-landscape.webp"} />
-      <WhoWeAre
-        title1={"work that"}
-        title2={"performs"}
-        paragraph={`From professional service websites
-                <br />
-                to branded aerial videos — our work builds
-                <br />
-                credibility and converts attention into leads.`}
-        btn_text={"See Case Studies"}
-        btn_link={"/about"}
+
+      {/* ======== */}
+
+      <LeftImgSection
+        title={"Digital Marketing"}
+        description={"Data-driven SEO, targeted advertising, and content strategies to put you at the forefront of your market and multiply ROI."}
+        images={"k1.webp"}
       />
+
+      <RightImgSection
+        title={"CRM & Automation"}
+        description={"Streamline your business with CRM implementations (like HubSpot, Salesforce) and automated workflows that save time and boost customer engagement."}
+        images={"k2.webp"}
+      />
+
+      <LeftImgSection
+        title={"AI Agents & Chatbots"}
+        description={"Next-gen AI assistants and chatbots that provide 24/7 customer interaction, lead qualification, and support - custom-built for your needs."}
+        images={"k3.webp"}
+      />
+
       <WhoWeAre
         title1={"who"}
         title2={"we are"}
-        paragraph={`We don’t do fluff. We do focused,<br /> aligned digital marketing that drives visibility,<br /> trust, and leads.`}
+        paragraph={`Dotoli Digital is a Florida-based team of digital visionaries and strategists.<br/>  Since our inception, we’ve partnered with industry leaders and ambitious<br/> brands to deliver bespoke marketing solutions powered by AI and creativity.`}
         btn_text={"Meet the Team"}
         btn_link={"/about"}
       />
