@@ -100,9 +100,10 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
           </h1>
           <div className="text" ref={textRef}>
             <p className="text-center">
-              They won't hire you if they can’t find you — and visibility alone won't win their trust.
-              <br /> Market Target helps service businesses rank higher, look sharper, and convert better with technical SEO,
-              <br /> strategic branding, and high-impact video.
+              At Dotoli Digital, we transform ideas into stunning visual identities and high-converting
+              <br /> websites. Whether you're a startup or scaling brand, we help you
+              <br /> stand out and sell smarter. CTA Buttons:
+              <br />
             </p>
             <div>
               <div className="scroll-next-sec">
