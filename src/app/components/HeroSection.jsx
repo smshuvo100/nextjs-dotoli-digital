@@ -92,10 +92,10 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
         <div className="container">
           <h1 className="title-1 text-center">
             <span ref={title1Ref} className="block">
-              AI-POWERED MARKETING
+              Ai-Powered Marketing
             </span>
             <span ref={title2Ref} className="block">
-              FOR VISIONARY BRANDS.
+              For Visionary Brands.
             </span>
           </h1>
           <div className="text" ref={textRef}>

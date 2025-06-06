@@ -57,10 +57,10 @@ function Footer() {
             <div className="text">
               <h3 className="title-3 text-left">
                 <span className="block sm1" ref={text1Ref}>
-                  ready to get
+                  Ready To
                 </span>
                 <span className="block sm2" ref={text2Ref}>
-                  trusted?
+                  Get Trusted?
                 </span>
               </h3>
             </div>

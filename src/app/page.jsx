@@ -19,24 +19,32 @@ export default function Home() {
       <HeroSection />
       <VideoSection />
       <RecentWorkSection />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <RightImgSection title={"technical seo"} description={"Improve your rankings with clean, fast, search-optimized foundations."} images={"loftloom-main-landscape.webp"} />
 
-      <LeftImgSection title={"brand development"} description={"Build a cohesive, trustworthy identity that clients remember."} images={"imusic-main-landscape.webp"} />
-
-      <RightImgSection title={"website development"} description={"Custom-designed, mobile-friendly, and SEO-ready websites that grow with your business."} images={"technis-main-landscape.webp"} />
-
-      {/* ======== */}
-
-      <LeftImgSection
+      <RightImgSection
         title={"Digital Marketing"}
         description={"Data-driven SEO, targeted advertising, and content strategies to put you at the forefront of your market and multiply ROI."}
         images={"k1.webp"}
       />
+
+      <LeftImgSection
+        title={"Website Development"}
+        description={"Luxury, conversion-focused websites tailored to your brand – specializing in real estate, home services, and corporate sites that impress and perform."}
+        images={"technis-main-landscape.webp"}
+      />
+
+      <RightImgSection
+        title={"VR Experiences"}
+        description={"Immersive virtual reality marketing experiences - from virtual showrooms to interactive storytelling - to set your brand apart."}
+        images={"loftloom-main-landscape.webp"}
+      />
+
+      <LeftImgSection
+        title={"Branding & Creative"}
+        description={"End-to-end creative services from brand identity design to video production – crafting a brand image that resonates and endures."}
+        images={"imusic-main-landscape.webp"}
+      />
+
+      {/* ======== */}
 
       <RightImgSection
         title={"CRM & Automation"}
@@ -51,8 +59,8 @@ export default function Home() {
       />
 
       <WhoWeAre
-        title1={"who"}
-        title2={"we are"}
+        title1={"Who"}
+        title2={"We Are"}
         paragraph={`Dotoli Digital is a Florida-based team of digital visionaries and strategists.<br/>  Since our inception, we’ve partnered with industry leaders and ambitious<br/> brands to deliver bespoke marketing solutions powered by AI and creativity.`}
         btn_text={"Meet the Team"}
         btn_link={"/about"}
@@ -62,8 +70,10 @@ export default function Home() {
       <ClientTestimonial />
       <NewsTracker />
       <DribbbleSection />
-      <JungleSection title1={"join our"} title2={"in your"} title3={"journey"} />
+      <JungleSection title1={"Join "} title2={"With Us"} title3={""} />
       <SocialSection />
     </>
   );
 }
+/*  IN YOUR
+JOURNEY */

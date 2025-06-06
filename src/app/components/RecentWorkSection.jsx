@@ -59,10 +59,10 @@ export function RecentWorkSection() {
             <div className="text">
               <h3 className="title-3 text-left">
                 <span className="block sm1" ref={text1Ref}>
-                  WHAT
+                  What
                 </span>
                 <span className="block sm2" ref={text2Ref}>
-                  WE DO
+                  We Do
                 </span>
               </h3>
 

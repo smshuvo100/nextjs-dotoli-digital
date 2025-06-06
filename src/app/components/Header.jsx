@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
-import { AudioPlayer } from "./AudioPlayer";
 import { ThemeToggle } from "./ThemeToggle";
 
 function Header() {
@@ -32,7 +31,7 @@ function Header() {
 
             <div className="toggle-container">
               <ThemeToggle />
-              <AudioPlayer />
+              {/* <AudioPlayer /> */}
             </div>
 
             <div className="header-controls">
