@@ -1264,6 +1264,37 @@ section.dribbble-sec {
   font-size: 20px;
   line-height: 30px;
 }
+
+/* 
+===============================================
+  sm gallery
+===============================================
+*/
+.sm-featured-demos.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.sm-thumbaa {
+  position: relative;
+  height: 650px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(29, 28, 31, 0.2);
+}
+
+.sm-thumbaa img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(0);
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
 /* 
 ======================
   footer
