@@ -29,7 +29,7 @@ export default function page() {
 
       <ServicesSection
         title={`Website <br />Development`}
-        btn_link={"/contact"}
+        btn_link={"/services/website-development"}
         btn_text={"View project"}
         description={`We create short-form, cinematic, and aerial video content that shows your expertise and elevates your brand across web and social.`}
         list1={`<p>Drone videography</p>
@@ -41,7 +41,7 @@ export default function page() {
 
       <ServicesSection
         title={`VR <br />Experiences`}
-        btn_link={"/contact"}
+        btn_link={"/services/vr-experiences"}
         btn_text={"View project"}
         description={`We craft brands that are consistent, credible, and easy to choose — from logos and color systems to tone of voice and trust-building assets.`}
         list1={`<p>Brand positioning</p>
@@ -52,7 +52,7 @@ export default function page() {
       />
       <ServicesSection
         title={`Branding & <br />Creative`}
-        btn_link={"/contact"}
+        btn_link={"/services/branding-creative"}
         btn_text={"View project"}
         description={`We craft brands that are consistent, credible, and easy to choose — from logos and color systems to tone of voice and trust-building assets.`}
         list1={`<p>Brand positioning</p>
@@ -63,7 +63,7 @@ export default function page() {
       />
       <ServicesSection
         title={`CRM & <br />Automation`}
-        btn_link={"/contact"}
+        btn_link={"/services/crm-automation"}
         btn_text={"View project"}
         description={`We craft brands that are consistent, credible, and easy to choose — from logos and color systems to tone of voice and trust-building assets.`}
         list1={`<p>Brand positioning</p>
@@ -74,7 +74,7 @@ export default function page() {
       />
       <ServicesSection
         title={`AI Agents & <br />Chatbots`}
-        btn_link={"/contact"}
+        btn_link={"/services/ai-agents-chatbots"}
         btn_text={"View project"}
         description={`We craft brands that are consistent, credible, and easy to choose — from logos and color systems to tone of voice and trust-building assets.`}
         list1={`<p>Brand positioning</p>
