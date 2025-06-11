@@ -8,9 +8,9 @@ export default function Page() {
     <>
       <HeroAllSection
         id="secrion1"
-        title1="Website"
-        title2="Development"
-        description={`No hype. Just proven strategies to grow service-based<br/> businesses — through SEO, brand clarity, and<br/> high-converting content.`}
+        title1="Building Stunning "
+        title2="Websites that Convert"
+        description={`Our web development team crafts high-end, mobile-responsive websites<br/> that not only look exceptional but also drive business growth.Specializing<br/>   in sitesthat wow investors and customers alike.`}
       />
       <PortfolioImage
         img1="/images/project-1.webp"

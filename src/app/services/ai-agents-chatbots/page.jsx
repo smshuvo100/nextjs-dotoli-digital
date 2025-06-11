@@ -8,9 +8,9 @@ export default function Page() {
     <>
       <HeroAllSection
         id="secrion1"
-        title1="AI Agents"
-        title2="& Chatbots"
-        description={`No hype. Just proven strategies to grow service-based<br/> businesses — through SEO, brand clarity, and<br/> high-converting content.`}
+        title1="AI Agents & Chatbots - 24/7"
+        title2="Intelligent Customer Engagement."
+        description={`Unlock the power of artificial intelligence in customer service and sales.<br/> We create bespoke AI agents and chatbots that converse naturally,<br/> automate support, and boost conversions - all while embodying your brand's voice.`}
       />
       <PortfolioImage
         img1="/images/project-1.webp"

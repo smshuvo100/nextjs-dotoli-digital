@@ -8,9 +8,9 @@ export default function Page() {
     <>
       <HeroAllSection
         id="secrion1"
-        title1="CRM &"
-        title2="Automation"
-        description={`No hype. Just proven strategies to grow service-based<br/> businesses — through SEO, brand clarity, and<br/> high-converting content.`}
+        title1="Branding & Creative - Design"
+        title2=" That Inspires & Influences."
+        description={`From concept to reality, we craft visual identities, graphics, and videos<br/> that captivate your audience. Our creative team blends artistic<br/> finesse with strategic insight to elevate your brand above the rest.`}
       />
       <PortfolioImage
         img1="/images/project-1.webp"

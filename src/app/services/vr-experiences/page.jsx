@@ -8,9 +8,9 @@ export default function Page() {
     <>
       <HeroAllSection
         id="secrion1"
-        title1="VR"
-        title2="Experiences"
-        description={`No hype. Just proven strategies to grow service-based<br/> businesses — through SEO, brand clarity, and<br/> high-converting content.`}
+        title1="Immersive VR Experiences -"
+        title2="Step Into the Future."
+        description={`Wow your audience with fully immersive virtual reality experiences. From virtual<br/> showrooms to interactive product demos, our VR solutions create<br/> unforgettable engagements that set you apart from the competition.`}
       />
       <PortfolioImage
         img1="/images/project-1.webp"

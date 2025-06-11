@@ -1,5 +1,4 @@
 "use client";
-import { BannerSection } from "../components/BannerSection";
 import { ClientTestimonial } from "../components/ClientTestimonial";
 import { CounterSection } from "../components/CounterSection";
 import { HeroAllSection } from "../components/HeroAllSection";
@@ -14,25 +13,18 @@ export default function About() {
     <>
       <HeroAllSection
         id={"sm-bg-text-sec"}
-        title1={"a strategic growth partner"}
-        title2={"for service businesses."}
-        description={`We help service brands get found,<br/> build trust, and win clients — using data-backed SEO,<br/> compelling branding, and high-impact video.`}
+        title1={"Driven by Innovation,"}
+        title2={"Defined by Results."}
+        description={`Dotoli Digital is a Florida-based team of digital visionaries and strategists. Since our inception,<br /> we've partnered with industry leadersand ambitious brands to deliver bespoke<br />  marketing solutions powered by AI and creativity.`}
       />
-      <TextCounterSection
-        text={`Market Target is built on 10+ years<br/> of helping service-based businesses<br/> rise above the noise.`}
-        paragraph={`We've helped agencies, consultants,<br/> and tradespeople turn traffic into leads and<br/> leads into revenue — without wasting a cent.`}
-      />
+      <TextCounterSection text={`Ready to experience the<br /> Dotoli Digital difference?`} btn_text={"Schedule a Consultation"} btn_link={"/team"} />
 
-      <BannerSection title={"strategic. sreative. built to convert."} />
+      {/*  <BannerSection title={"strategic. sreative. built to convert."} /> */}
 
       <WhoWeAre
-        title1={"who"}
-        title2={"we are"}
-        description={`We’re not a creative agency.<br /> We’re a results agency.
- Market Target combines deep<br /> technical SEO, brand positioning, and high-quality<br /> video to help service-based businesses increase visibility, <br />build credibility, and generate real leads.
-
-                <br />`}
-        paragraph={`We stay ahead of algorithm changes, design trends, and buyer behavior so you don’t have to. We bring measurable clarity to your online presence.`}
+        title1={"Why Choose"}
+        title2={"DOTOLI DIGITAL"}
+        paragraph={`Highlight that all work is done by a premium U.S. team <br />(reassuring for global clients who want American quality).`}
         btn_text={"About Us"}
         btn_link={"/about"}
       />

@@ -8,9 +8,9 @@ export default function Page() {
     <>
       <HeroAllSection
         id="secrion1"
-        title1="Digital"
-        title2="Marketing"
-        description={`No hype. Just proven strategies to grow service-based<br/> businesses — through SEO, brand clarity, and<br/> high-converting content.`}
+        title1="Data-Driven Marketing that"
+        title2="Dominates Your Market."
+        description={`From SEO to social media, our expert team leverages AI insights <br/>and creative strategy to grow your traffic, leads, and revenue.<br/> We don't just run campaigns - we craft digital success stories.`}
       />
       <PortfolioImage
         img1="/images/project-1.webp"
