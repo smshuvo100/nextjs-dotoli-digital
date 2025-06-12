@@ -1139,6 +1139,19 @@ section.dribbble-sec {
 ======================
 */
 
+.contact-sec .flex-box {
+  display: flex;
+  gap: 30px;
+}
+.contact-sec .flex-box .contact-form {
+  width: 50%;
+}
+.contact-sec .flex-box .contact-img {
+  width: 50%;
+}
+.contact-sec .flex-box .contact-img img {
+  width: 100%;
+}
 .form-group {
   display: flex;
   flex-direction: column;
