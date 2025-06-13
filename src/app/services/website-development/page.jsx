@@ -13,15 +13,14 @@ export default function Page() {
         description={`Our web development team crafts high-end, mobile-responsive websites<br/> that not only look exceptional but also drive business growth.Specializing<br/>   in sitesthat wow investors and customers alike.`}
       />
       <PortfolioImage
-        img1="/images/project-1.webp"
-        img2="/images/project-2.webp"
-        img3="/images/project-3.webp"
-        img4="/images/project-4.webp"
-        img5="/images/project-5.webp"
-        img6="/images/project-6.webp"
-        img7="/images/project-7.webp"
-        img8="/images/project-8.webp"
-        img9="/images/project-4.webp"
+        img1="/images/w1.webp"
+        img2="/images/w2.webp"
+        img3="/images/w3.webp"
+        img4="/images/w4.webp"
+        img5="/images/w5.webp"
+        img6="/images/w6.webp"
+        img7="/images/w7.webp"
+        img8="/images/w8.webp"
       />
     </>
   );
