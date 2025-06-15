@@ -21,6 +21,13 @@ export default function Page() {
         img6="/images/w6.webp"
         img7="/images/w7.webp"
         img8="/images/w8.webp"
+        img9="/images/project-1.webp"
+        img10="/images/project-2.webp"
+        img11="/images/project-3.webp"
+        img12="/images/project-4.webp"
+        img13="/images/project-5.webp"
+        img14="/images/project-6.webp"
+        img15="/images/project-7.webp"
       />
     </>
   );
