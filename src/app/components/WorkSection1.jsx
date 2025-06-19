@@ -1,6 +1,10 @@
 export function WorkSection1() {
   return (
     <>
+      {/* 
+    section work-sec1
+    ServiceDetailsSection.jsx
+    */}
       <section className="work-sec1">
         <div className="container-w1">
           <div className="img-text-box">
