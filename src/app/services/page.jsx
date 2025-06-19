@@ -26,6 +26,15 @@ export default function page() {
         description={`Luxury, conversion-focused websites tailored to your brand – specializing in real estate, home services, and corporate sites that impress and perform.`}
       />
 
+      {/* /services/seo-marketing */}
+
+      <ServicesSection
+        title={`Seo <br />Marketing`}
+        btn_link={"/services/seo-marketing"}
+        btn_text={"View project"}
+        description={`Our SEO marketing services are designed to improve your search engine rankings, increase organic traffic, and convert visitors into customers. Let us help you dominate search results.`}
+      />
+
       <ServicesSection
         title={`VR <br />Experiences`}
         btn_link={"/services/vr-experiences"}

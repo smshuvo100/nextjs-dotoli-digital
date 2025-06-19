@@ -3,8 +3,8 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 import { useRef } from "react";
-
 gsap.registerPlugin(ScrollTrigger);
 
 export function ServiceDetailsSection({ img, heading, text }) {
@@ -56,7 +56,7 @@ export function ServiceDetailsSection({ img, heading, text }) {
       <div className="container-w1">
         <div className="img-text-box">
           <div className="img-box" ref={imgBoxRef}>
-            <img alt="Visual" loading="lazy" width="1240" height="700" src={img} />
+            <Image src={img} alt="Visual" width="1240" height="700" />
           </div>
           <div className="content">
             <h2 className="title-4" ref={headingRef}>
