@@ -4,20 +4,16 @@ import { HeroAllSection } from "../components/HeroAllSection";
 import { JungleSection } from "../components/JungleSection";
 import { TeamMemberSection } from "../components/TeamMemberSection";
 import { TextCounterSection } from "../components/TextCounterSection";
-import { WhoWeAre } from "../components/WhoWeAre";
 export default function page() {
   return (
     <>
       <HeroAllSection
-        title1={"the team behind"}
-        title2={"market target"}
+        title1={"The Team Behind"}
+        title2={"Market Target"}
         description={`Strategists, creators, and marketers with one goal:<br/> helping service businesses grow with SEO,<br/>  branding, and video that performs.`}
       />
 
       <TextCounterSection text={`Our results come from experience — not hype.<br/> Every project is powered by a team that understands<br/> both strategy and execution.`} />
-      <BannerSection title={"built on strategy. backed by results."} />
-
-      <WhoWeAre description={`Meet the people behind the work — SEO specialists, branding experts, and video creatives focused on moving your business forward.`} />
 
       <TeamMemberSection />
 
@@ -30,7 +26,7 @@ export default function page() {
         btn_link={"/about"}
       />
 
-      <section className="banner-parallax-sec" style={{ backgroundImage: "url(https://trionn.com/_next/static/media/lion2.813c8d36.webp)" }}></section>
+      <BannerSection title={"Built On Strategy. Backed By Results."} />
     </>
   );
 }

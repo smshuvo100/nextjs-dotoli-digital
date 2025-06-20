@@ -125,10 +125,36 @@ h6 span {
   line-height: 58px;
   margin-bottom: 30px;
 }
+
 /*mobile*/
 @media (max-width: 767px) {
+  body .sm-featured-demos.grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body .btn-group {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  body .services-sec .box .coll.sm2,
+  body .services-sec .box .coll.sm1 {
+    width: 100%;
+  }
+  body .services-sec .box {
+    flex-direction: column;
+    padding: 40px 32px;
+  }
+  .btn-group {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
   .title-1 {
     font-size: 47px;
+    line-height: 50px;
+  }
+  .title-4 {
+    font-size: 32px;
     line-height: 40px;
   }
   .title-2 {
@@ -1042,6 +1068,7 @@ section.dribbble-sec {
 .jungle-sec {
   overflow: hidden;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 .jungle-sec .title-3 .block {
   background: linear-gradient(90deg, #e0eeee 50%, #252525 0);
@@ -1217,10 +1244,14 @@ section.dribbble-sec {
 .container-w1 {
   max-width: 1240px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .container-w2 {
   max-width: 880px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* 
@@ -1228,6 +1259,12 @@ section.dribbble-sec {
   services-sec
 ======================
 */
+.services-sec .box .btn {
+  width: 100%;
+}
+.services-sec .box {
+  flex-wrap: wrap;
+}
 .services-sec {
   margin-bottom: 60px;
 }
@@ -1356,6 +1393,24 @@ footer.footer .boxa a.f-link p.ft2 {
 
 /*all mobile*/
 @media (max-width: 767px) {
+  body .contact-sec .flex-box {
+    flex-direction: column;
+  }
+  body .contact-sec .flex-box .contact-form {
+    width: 100%;
+  }
+  body .contact-sec .flex-box .contact-img {
+    width: 100%;
+  }
+  body .form-row {
+    display: block;
+  }
+  body .team-member {
+    padding-left: 15px;
+  }
+  body .sm-bg-text-sec .title-3.text-center {
+    line-height: 76px;
+  }
   body footer.footer .boxa .f-link {
     width: 100% !important;
   }

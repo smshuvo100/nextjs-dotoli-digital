@@ -29,9 +29,9 @@ export default function page() {
   return (
     <>
       <HeroAllSection
-        title1={"let’s talk about"}
-        title2={"growing your business"}
-        description={`Need better visibility, stronger branding, <br/> or scroll-stopping video? Tell us what you<br/> need — we’ll help you get there.`}
+        title1={"Let’s Talk About"}
+        title2={"Growing Your Business"}
+        description={`Need better visibility, stronger branding, <br/> or scroll-stopping video? Tell us what you<br/> need — we'll help you get there.`}
       />
 
       <TextCounterSection text={`Start your project — or just start the conversation.`} paragraph={`Tell us what’s not working — and where you want to go. We’ll respond with clear steps to help.`} />
