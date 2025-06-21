@@ -1,120 +1,90 @@
+"use client";
+
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import { useRef } from "react";
 
+// ✅ Each logo has its own dimensions
+const logos = [
+  { src: "/images/brand-logo/wsj-short-brand.svg", width: 180, height: 80 },
+  { src: "/images/brand-logo/bloomberg.svg", width: 160, height: 80 },
+  { src: "/images/brand-logo/z-logo-default.svg", width: 150, height: 80 },
+  { src: "/images/brand-logo/mansionglobal.svg", width: 300, height: 80 },
+  { src: "/images/brand-logo/forbes.svg", width: 140, height: 80 },
+  { src: "/images/brand-logo/logo-wide-transparent-500.svg", width: 200, height: 80 },
+  { src: "/images/brand-logo/zillow.svg", width: 160, height: 80 },
+  { src: "/images/brand-logo/wsj-short-brand.svg", width: 180, height: 80 },
+  { src: "/images/brand-logo/bloomberg.svg", width: 160, height: 80 },
+  { src: "/images/brand-logo/z-logo-default.svg", width: 150, height: 80 },
+  { src: "/images/brand-logo/mansionglobal.svg", width: 300, height: 80 },
+  { src: "/images/brand-logo/forbes.svg", width: 140, height: 80 },
+  { src: "/images/brand-logo/logo-wide-transparent-500.svg", width: 200, height: 80 },
+  { src: "/images/brand-logo/zillow.svg", width: 160, height: 80 }
+];
+
 export function LogoTracker() {
-  const newsTrackerRef = useRef(null);
-  const track1Ref = useRef(null);
-  const track2Ref = useRef(null);
+  const ticker1Ref = useRef(null);
+  const ticker2Ref = useRef(null);
 
-  useGSAP(
-    () => {
-      // Initialize the ticker animations
-      function setupTicker(tickerElement, isRTL = false) {
-        const tickerRun = tickerElement.querySelector(".ticker__run");
-        const textSections = tickerRun.querySelectorAll("span");
-        const tickerInnerWidth = textSections[0].offsetWidth;
-        const tickerScrollSpanCount = textSections.length;
-        const tickerScrollSpanWidth = tickerInnerWidth * tickerScrollSpanCount;
-        const tickerScrollWidth = -tickerInnerWidth;
-        const tickerDuration = Math.abs(tickerScrollSpanWidth / 1000);
+  // Animate one ticker
+  const animateTicker = (ref, reverse = false) => {
+    const el = ref.current;
+    if (!el) return;
 
-        let direction = `+=${tickerScrollWidth}`;
-        if (isRTL) {
-          direction = `-=${tickerScrollWidth}`;
-        }
+    const totalWidth = el.scrollWidth / 2;
 
-        gsap.to(tickerRun, {
-          x: direction,
-          ease: "none",
-          duration: tickerDuration,
-          repeat: -1,
-          modifiers: {
-            x: gsap.utils.unitize((x) => parseFloat(x) % tickerScrollWidth)
-          }
-        });
+    gsap.fromTo(
+      el,
+      { x: 0 },
+      {
+        x: reverse ? `+=${totalWidth}` : `-=${totalWidth}`,
+        duration: totalWidth / 100,
+        ease: "none",
+        repeat: -1
       }
+    );
+  };
 
-      // Setup tickers after component mounts
-      if (track1Ref.current && track2Ref.current) {
-        setupTicker(track1Ref.current);
-        setupTicker(track2Ref.current, true); // Second one moves right-to-left
-      }
-    },
-    { scope: newsTrackerRef }
+  useGSAP(() => {
+    animateTicker(ticker1Ref, false); // Top ticker: left to right
+    animateTicker(ticker2Ref, true); // Bottom ticker: right to left
+  });
+
+  const renderLogos = () => (
+    <>
+      {[...logos, ...logos].map((logo, index) => (
+        <span key={index} className="logo-wrapper">
+          <Image
+            src={logo.src}
+            alt="Logo"
+            width={logo.width}
+            height={logo.height}
+            onError={(e) => {
+              e.currentTarget.style.display = "none";
+              console.warn("Missing image:", logo.src);
+            }}
+          />
+        </span>
+      ))}
+    </>
   );
 
   return (
-    <section className="news-tracker logo-tracker" ref={newsTrackerRef}>
-      <h2 className="text-center text-3">We've worked for...</h2>
-      <div className="ticker" ref={track1Ref}>
-        <div className="ticker__run">
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-        </div>
-      </div>
+    <section className="news-tracker logo-tracker">
+      <h2>We've worked for...</h2>
 
-      <div className="ticker arabic" ref={track2Ref}>
-        <div className="ticker__run ">
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
-          <span>
-            <Image src="/images/casting-networks.svg" alt="Logo" width={160} height={60} />
-          </span>
+      <div className="ticker-wrapper">
+        <div className="ticker">
+          <div className="ticker__run" ref={ticker1Ref}>
+            {renderLogos()}
+          </div>
+        </div>
+
+        <div className="ticker reverse">
+          <div className="ticker__run" ref={ticker2Ref}>
+            {renderLogos()}
+          </div>
         </div>
       </div>
     </section>
