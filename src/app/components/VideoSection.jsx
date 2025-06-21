@@ -66,7 +66,7 @@ export function VideoSection() {
 
   return (
     <>
-      <section id="video-sec" ref={videoSecRef} className="video-sec">
+      <section id="video-sec" ref={videoSecRef} className="video-sec" aria-label="Scroll to video section">
         <div className="container">
           <div className="video-wrapper" ref={videoRef}>
             <video autoPlay loop muted>

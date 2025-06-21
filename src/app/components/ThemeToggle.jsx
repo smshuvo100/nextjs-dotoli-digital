@@ -17,7 +17,15 @@ export function ThemeToggle() {
 
   return (
     <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="theme-toggle">
-      {theme === "dark" ? <MdLightMode /> : <MdDarkMode />}
+      {theme === "dark" ? (
+        <>
+          <MdLightMode />
+        </>
+      ) : (
+        <>
+          <MdDarkMode />
+        </>
+      )}
     </button>
   );
 }

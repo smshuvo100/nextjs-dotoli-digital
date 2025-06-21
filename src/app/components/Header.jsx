@@ -31,7 +31,6 @@ function Header() {
 
             <div className="toggle-container">
               <ThemeToggle />
-              {/* <AudioPlayer /> */}
             </div>
 
             <div className="header-controls">
@@ -51,56 +50,58 @@ function Header() {
             <nav className="menu-nav">
               <ul>
                 <li>
-                  <Link href="/work" className="title-1 menu-link" onClick={closeMenu}>
+                  <Link href="/work" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
                     work
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="title-1 menu-link" onClick={closeMenu}>
+                  <Link href="/about" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
                     about
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services" className="title-1 menu-link" onClick={closeMenu}>
+                  <Link href="/services" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
                     services
                   </Link>
                 </li>
-
                 <li>
-                  <Link href="/team" className="title-1 menu-link" onClick={closeMenu}>
+                  <Link href="/team" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
                     team
                   </Link>
                 </li>
-
                 <li>
-                  <Link href="/contact" className="title-1 menu-link" onClick={closeMenu}>
+                  <Link href="/contact" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
                     contact
                   </Link>
                 </li>
               </ul>
             </nav>
+
             <div className="menu-social">
               <div className="info">
-                <a className="email" href="mailto:hello@trionn">
+                <a className="email" href="mailto:hello@trionn.com" tabIndex={isMenuOpen ? 0 : -1}>
                   hello@trionn.com
                 </a>
-                <a href="tel:+889824182099">+88 98241 82099</a>
+                <a href="tel:+889824182099" tabIndex={isMenuOpen ? 0 : -1}>
+                  +88 98241 82099
+                </a>
               </div>
+
               <div className="socials-m">
-                <a className="s-item" href="">
-                  <Image src="/images/dribble.svg" alt="" width={64} height={64} />
+                <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
+                  <Image src="/images/dribble.svg" alt="Dribbble" width={64} height={64} />
                 </a>
-                <a className="s-item" href="">
-                  <Image src="/images/linkedin.svg" alt="" width={64} height={64} />
+                <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
+                  <Image src="/images/linkedin.svg" alt="LinkedIn" width={64} height={64} />
                 </a>
-                <a className="s-item" href="">
-                  <Image src="/images/instagram.svg" alt="" width={64} height={64} />
+                <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
+                  <Image src="/images/instagram.svg" alt="Instagram" width={64} height={64} />
                 </a>
-                <a className="s-item" href="">
-                  <Image src="/images/behance.svg" alt="" width={64} height={64} />
+                <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
+                  <Image src="/images/behance.svg" alt="Behance" width={64} height={64} />
                 </a>
-                <a className="s-item" href="">
-                  <Image src="/images/facebook.svg" alt="" width={64} height={64} />
+                <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
+                  <Image src="/images/facebook.svg" alt="Facebook" width={64} height={64} />
                 </a>
               </div>
             </div>
