@@ -3,11 +3,13 @@ import { useEffect, useState } from "react";
 import Loading from "./loading";
 
 export default function LoadingWrapper({ children }) {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 2000); // Show Loading for 3 seconds
+    // Marks when hydration is complete on client
+    setIsClient(true);
   }, []);
 
-  return isLoading ? <Loading /> : children;
+  // Only show loading spinner until client-side hydration
+  return isClient ? children : <Loading />;
 }
