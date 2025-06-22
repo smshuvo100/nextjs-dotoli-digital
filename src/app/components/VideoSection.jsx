@@ -3,30 +3,28 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
+
 export function VideoSection() {
   const videoRef = useRef(null);
   const videoSecRef = useRef(null);
   const [isDesktop, setIsDesktop] = useState(false);
+  const [playVideo, setPlayVideo] = useState(false);
+
   // Check screen size on mount and resize
   useEffect(() => {
     const checkScreenSize = () => {
       setIsDesktop(window.innerWidth > 1024); // Only desktop (larger than iPad)
     };
 
-    // Initial check
     checkScreenSize();
-
-    // Add event listener for resize
     window.addEventListener("resize", checkScreenSize);
-
-    // Cleanup
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   // Register plugins
   gsap.registerPlugin(ScrollTrigger);
 
-  // Video animation - Scaling on scroll (only for desktop)
+  // Video animation - Scaling on scroll (desktop)
   useGSAP(
     () => {
       if (isDesktop) {
@@ -44,6 +42,7 @@ export function VideoSection() {
             pin: true,
             markers: false,
             onEnter: () => {
+              setPlayVideo(true); // Load video when section is visible
               gsap.to(videoRef.current, {
                 y: 0,
                 scale: 1
@@ -59,22 +58,27 @@ export function VideoSection() {
           delay: 3,
           ease: "Expo.easeOut"
         });
+        setPlayVideo(true); // Load immediately on mobile
       }
     },
     { scope: videoSecRef, dependencies: [isDesktop] }
   );
 
   return (
-    <>
-      <section id="video-sec" ref={videoSecRef} className="video-sec" aria-label="Scroll to video section">
-        <div className="container">
-          <div className="video-wrapper" ref={videoRef}>
-            <video autoPlay loop muted>
+    <section id="video-sec" ref={videoSecRef} className="video-sec" aria-label="Scroll to video section">
+      <div className="container">
+        <div className="video-wrapper" ref={videoRef}>
+          {playVideo ? (
+            <video autoPlay loop muted playsInline preload="none">
+              <source src="/video/intro-video.webm" type="video/webm" />
               <source src="/video/intro-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
             </video>
-          </div>
+          ) : (
+            <img src="/video/video-thumbnail.webp" alt="Intro Video Preview" width="100%" height="auto" loading="lazy" />
+          )}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
