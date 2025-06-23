@@ -22,7 +22,7 @@ export default function Home() {
 
       <RightImgSection
         title={"Digital Marketing"}
-        description={"Data-driven SEO, targeted advertising, and content strategies to put you at the forefront of your market and multiply ROI."}
+        description={`<strong>From traffic to traction — we turn clicks into clients with data-backed marketing.</strong> Data-driven SEO, targeted advertising, and content strategies to put you at the forefront of your market and multiply ROI.`}
         images={"k1.webp"}
       />
 

@@ -58,7 +58,7 @@ export function RightImgSection({ title, description, images }) {
           <div className="flex-box">
             <div className="content" ref={contentRef}>
               <h2 className="title-2"> {title}</h2>
-              <p className="text-1">{description}</p>
+              <p className="text-1" dangerouslySetInnerHTML={{ __html: description }} />
 
               <div className="btn">
                 <Link href="/about">Explore work</Link>

@@ -57,10 +57,10 @@ function Footer() {
             <div className="text">
               <h3 className="title-3 text-left">
                 <span className="block sm1" ref={text1Ref}>
-                  Ready To
+                  Let's Create
                 </span>
                 <span className="block sm2" ref={text2Ref}>
-                  Get Trusted?
+                  You'll Be Proud Of.
                 </span>
               </h3>
             </div>

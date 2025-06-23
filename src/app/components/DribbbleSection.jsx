@@ -361,14 +361,11 @@ export function DribbbleSection() {
             <div className="dribbble-middle-text">
               <Image src="/images/dribbble-logo.webp" alt="Logo" width={200} height={60} priority />
               <p className="text-2">
-                Like a lion's roar echoing through
-                <br />
-                the jungle, a hint of our creative
-                <br />
-                minds emerges.
+                <strong>Design that Speaks. Strategy that Performs. </strong>
+                Explore the creative edge where visuals meet value.
               </p>
               <div className="btn">
-                <Link href="/about">Explore work</Link>
+                <Link href="/services">Explore work</Link>
               </div>
             </div>
             <div className="dribbble-posts">
