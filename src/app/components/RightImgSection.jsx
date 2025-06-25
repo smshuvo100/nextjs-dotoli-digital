@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 
-export function RightImgSection({ title, description, images }) {
+export function RightImgSection({ title, description, images, btn_text, btn_link }) {
   const rightImgSecRef = useRef(null);
   const contentRef = useRef(null);
   const images1Ref = useRef(null);
@@ -61,11 +61,12 @@ export function RightImgSection({ title, description, images }) {
               <p className="text-1" dangerouslySetInnerHTML={{ __html: description }} />
 
               <div className="btn">
-                <Link href="/about">Explore work</Link>
+                {/* <Link href="/about">Explore work</Link> */}
+                <Link href={btn_link}>{btn_text}</Link>
               </div>
             </div>
             <div className="img-box">
-              <Link href="/">
+              <Link href={btn_link}>
                 <Image ref={images1Ref} src={`/images/${images}`} alt="loftloom" width={1500} height={1000} priority />
               </Link>
             </div>

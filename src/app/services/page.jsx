@@ -39,25 +39,26 @@ export default function page() {
         title={`VR <br />Experiences`}
         btn_link={"/services/vr-experiences"}
         btn_text={"View project"}
-        description={`Immersive virtual reality marketing experiences – from virtual showrooms to interactive storytelling – to set your brand apart.`}
+        description={`Where strategy meets style. From identity design to storytelling, we build brands that not only look good—but mean something.`}
       />
       <ServicesSection
         title={`Branding & <br />Creative`}
         btn_link={"/services/branding-creative"}
         btn_text={"View project"}
-        description={`End-to-end creative services from brand identity design to video production – crafting a brand image that resonates and endures.`}
+        description={`Where strategy meets style. From identity design to storytelling, we build brands that not only look good—but mean something."}
+        btn_text={"Explore work`}
       />
       <ServicesSection
         title={`CRM & <br />Automation`}
         btn_link={"/services/crm-automation"}
         btn_text={"View project"}
-        description={`Streamline your business with CRM implementations (like HubSpot, Salesforce) and automated workflows that save time and boost customer engagement.`}
+        description={`From lead to loyalty — our CRM setups and automations (Close, HubSpot, Follow Up Boss) keep your pipeline flowing and your team focused.`}
       />
       <ServicesSection
         title={`AI Agents & <br />Chatbots`}
         btn_link={"/services/ai-agents-chatbots"}
         btn_text={"View project"}
-        description={`Next-gen AI assistants and chatbots that provide 24/7 customer interaction, lead qualification, and support – custom-built for your needs.`}
+        description={`Custom-built AI agents and automation flows powered by tools like Make.com, Zapier, and n8n—designed to qualify leads, automate support, and run your business on autopilot.`}
       />
 
       <LogoTracker />

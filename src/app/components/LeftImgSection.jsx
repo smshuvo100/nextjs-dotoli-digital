@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
-export function LeftImgSection({ title, description, images }) {
+export function LeftImgSection({ title, description, images, btn_text, btn_link }) {
   const leftImgSecRef = useRef(null);
   const content1Ref = useRef(null);
   const images2Ref = useRef(null);
@@ -56,7 +56,7 @@ export function LeftImgSection({ title, description, images }) {
         <div className="container">
           <div className="flex-box">
             <div className="img-box">
-              <Link href="/">
+              <Link href={btn_link}>
                 <Image ref={images2Ref} src={`/images/${images}`} alt="loftloom" width={1500} height={1000} priority />
               </Link>
             </div>
@@ -65,7 +65,7 @@ export function LeftImgSection({ title, description, images }) {
               <p className="text-1">{description}</p>
 
               <div className="btn">
-                <Link href="/about">View project</Link>
+                <Link href={btn_link}>{btn_text}</Link>
               </div>
             </div>
           </div>

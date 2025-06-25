@@ -551,7 +551,9 @@ menu
   justify-content: center;
   position: relative;
 } */
-
+section.hero-wrapper.sm-all .btn-group {
+  justify-content: center;
+}
 .hero-wrapper {
   padding-top: 200px;
 }

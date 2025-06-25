@@ -24,38 +24,58 @@ export default function Home() {
         title={"Digital Marketing"}
         description={`<strong>From traffic to traction — we turn clicks into clients with data-backed marketing.</strong> Data-driven SEO, targeted advertising, and content strategies to put you at the forefront of your market and multiply ROI.`}
         images={"k1.webp"}
+        btn_text={"Explore work"}
+        btn_link={"/services/digital-marketing"}
       />
 
       <LeftImgSection
         title={"Website Development"}
         description={"Luxury, conversion-focused websites tailored to your brand – specializing in real estate, home services, and corporate sites that impress and perform."}
         images={"technis-main-landscape.webp"}
+        btn_text={"Explore work"}
+        btn_link={"/services/website-development"}
       />
-
       <RightImgSection
-        title={"VR Experiences"}
-        description={"Immersive virtual reality marketing experiences - from virtual showrooms to interactive storytelling - to set your brand apart."}
-        images={"loftloom-main-landscape.webp"}
+        title={"Seo Marketing"}
+        description={
+          "Our SEO marketing services are designed to improve your search engine rankings, increase organic traffic, and convert visitors into customers. Let us help you dominate search results."
+        }
+        images={"sec-service.webp"}
+        btn_text={"Explore work"}
+        btn_link={"/services/seo-marketing"}
       />
 
       <LeftImgSection
+        title={"VR Experiences"}
+        description={"From lifelike 3D walkthroughs to fully immersive property tours — we bring empty plots to life before they’re built."}
+        images={"loftloom-main-landscape.webp"}
+        btn_text={"Explore work"}
+        btn_link={"/services/vr-experiences"}
+      />
+
+      <RightImgSection
         title={"Branding & Creative"}
-        description={"End-to-end creative services from brand identity design to video production – crafting a brand image that resonates and endures."}
-        images={"imusic-main-landscape.webp"}
+        description={"Where strategy meets style. From identity design to storytelling, we build brands that not only look good—but mean something."}
+        btn_text={"Explore work"}
+        btn_link={"/services/branding-creative"}
       />
 
       {/* ======== */}
 
-      <RightImgSection
+      <LeftImgSection
         title={"CRM & Automation"}
-        description={"Streamline your business with CRM implementations (like HubSpot, Salesforce) and automated workflows that save time and boost customer engagement."}
+        description={"From lead to loyalty — our CRM setups and automations (Close, HubSpot, Follow Up Boss) keep your pipeline flowing and your team focused."}
         images={"k2.webp"}
+        btn_text={"Explore work"}
+        btn_link={"/services/crm-automation"}
       />
 
-      <LeftImgSection
+      <RightImgSection
         title={"AI Agents & Chatbots"}
-        description={"Next-gen AI assistants and chatbots that provide 24/7 customer interaction, lead qualification, and support - custom-built for your needs."}
+        description={"Custom-built AI agents and automation flows powered by tools like Make.com, Zapier, and n8n—designed to qualify leads, automate support, and run your business on autopilot."}
         images={"k3.webp"}
+        btn_text={"Explore work"}
+        btn_link={"/services/ai-agents-chatbots"}
       />
 
       <WhoWeAre

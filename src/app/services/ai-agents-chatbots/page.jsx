@@ -8,12 +8,16 @@ export default function Page() {
     <>
       <HeroAllSection
         id="secrion1"
-        title1="AI Agents & Chatbots - 24/7"
-        title2="Intelligent Customer Engagement."
-        description={`Unlock the power of artificial intelligence in customer service and sales.<br/> We create bespoke AI agents and chatbots that converse naturally,<br/> automate support, and boost conversions - all while embodying your brand's voice.`}
+        title1="AI-Powered Agents That"
+        title2="Engage, Qualify With You."
+        description={`We build intelligent AI agents and chatbots powered by tools like Make.com, Zapier,<br /> and n8n—designed to engage leads, qualify prospects, and automate<br /> conversations 24/7 while staying true to your brand voice.`}
+        btn_text={"Contact Us"}
+        btn_link={"/contact"}
       />
 
-      {/* <PortfolioLightbox
+      {/* 
+      <Link href="/contact">Contact Us</Link>
+      <PortfolioLightbox
         img1="/images/aai1.webp"
         img2="/images/aai2.webp"
         img3="/images/aai3.webp"

@@ -5,8 +5,7 @@ import Link from "next/link";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
-
-export function HeroAllSection({ title1, title2, description, id }) {
+export function HeroAllSection({ title1, title2, description, id, btn_text, btn_link }) {
   const title1Ref = useRef(null);
   const title2Ref = useRef(null);
   const textRef = useRef(null);
@@ -61,7 +60,7 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
 
   return (
     <>
-      <section className="hero-wrapper" ref={heroWrapperRef}>
+      <section className="hero-wrapper sm-all" ref={heroWrapperRef}>
         <div className="container">
           <h1 className="title-1 text-center">
             <span ref={title1Ref} className="block">
@@ -80,6 +79,16 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
                 </Link>
               </div>
             </div>
+
+            {btn_link ? (
+              <div className="btn-group">
+                <div className="btn">
+                  <Link href={btn_link}>{btn_text}</Link>
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </section>
