@@ -144,7 +144,6 @@ export function ClientTestimonial() {
             <Image src="/images/quote.svg" alt="icon" width={80} height={59} />
             <p>"The email workflows they designed are still converting leads three months later. It’s like setting and forgetting—with results!"</p>
             <div className="client-info">
-              <Image src="/images/avata.webp" alt="avata" width={70} height={70} />
               <p className="name">Ethan Brooks</p>
               <p className="position">Marketing Lead at NurtureDesk</p>
             </div>
