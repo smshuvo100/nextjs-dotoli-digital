@@ -40,7 +40,7 @@ export default function Home() {
         description={
           "Our SEO marketing services are designed to improve your search engine rankings, increase organic traffic, and convert visitors into customers. Let us help you dominate search results."
         }
-        images={"sec-service.webp"}
+        images={"loftloom-main-landscape.webp"}
         btn_text={"Explore work"}
         btn_link={"/services/seo-marketing"}
       />
@@ -48,7 +48,7 @@ export default function Home() {
       <LeftImgSection
         title={"VR Experiences"}
         description={"From lifelike 3D walkthroughs to fully immersive property tours — we bring empty plots to life before they’re built."}
-        images={"loftloom-main-landscape.webp"}
+        images={"sec-service.webp"}
         btn_text={"Explore work"}
         btn_link={"/services/vr-experiences"}
       />
@@ -56,6 +56,7 @@ export default function Home() {
       <RightImgSection
         title={"Branding & Creative"}
         description={"Where strategy meets style. From identity design to storytelling, we build brands that not only look good—but mean something."}
+        images={"k2.webp"}
         btn_text={"Explore work"}
         btn_link={"/services/branding-creative"}
       />
