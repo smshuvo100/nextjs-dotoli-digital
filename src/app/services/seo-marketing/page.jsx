@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer";
 import { HeroAllSection } from "../../components/HeroAllSection";
 import { ServiceDetailsSection } from "../../components/ServiceDetailsSection";
 export default function page() {
@@ -57,6 +58,7 @@ export default function page() {
         heading="High Traffic Achieved from Competitive, High-Volume Keywords"
         text="This snapshot shows strong organic traffic driven by a handful of high-search-volume keywords, even in high keyword difficulty (KD). One standout term delivers 19.9K clicks from a 301K search volume with an 86 KD%, highlighting success in highly competitive SERPs. Despite challenging KD values (mostly above 70), the performance demonstrates effective SEO and content strategies capable of ranking for valuable, high-intent queries."
       />
+      <Footer />
     </>
   );
 }

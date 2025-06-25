@@ -1,6 +1,7 @@
 "use client";
 import { ClientTestimonial } from "../components/ClientTestimonial";
 import { CounterSection } from "../components/CounterSection";
+import Footer from "../components/Footer";
 import { HeroAllSection } from "../components/HeroAllSection";
 import { LogoTracker } from "../components/LogoTracker";
 import { PageTitle } from "../components/PageTitle";
@@ -32,9 +33,7 @@ export default function About() {
       <PageTitle />
       <ClientTestimonial />
       <LogoTracker />
-      {/* 
-      HeroAboutSection.jsx
-      */}
+      <Footer />
     </>
   );
 }

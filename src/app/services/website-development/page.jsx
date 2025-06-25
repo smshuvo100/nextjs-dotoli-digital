@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer";
 import { HeroAllSection } from "../../components/HeroAllSection";
 import { PortfolioImage } from "../../components/PortfolioImage";
 /* 
@@ -33,6 +34,7 @@ export default function Page() {
         img18="/images/project-6.webp"
         img19="/images/project-7.webp"
       />
+      <Footer />
     </>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 import { BannerSection } from "../components/BannerSection";
+import Footer from "../components/Footer";
 import { HeroAllSection } from "../components/HeroAllSection";
 import { JungleSection } from "../components/JungleSection";
 import { TeamMemberSection } from "../components/TeamMemberSection";
@@ -27,6 +28,7 @@ export default function page() {
       />
 
       <BannerSection title={"Built On Strategy. Backed By Results."} />
+      <Footer />
     </>
   );
 }

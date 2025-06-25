@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer";
 import { HeroAllSection } from "../../components/HeroAllSection";
 import { ServiceDetailsSection } from "../../components/ServiceDetailsSection";
 /* 
@@ -104,6 +105,7 @@ export default function Page() {
         heading="300%+ ROAS for Smart Lighting Campaigns"
         text="Generated over 500 conversions with just £15K ad spend using Performance Max for a UK-based smart lighting brand. Efficient targeting, powerful creative, and real-time optimization drove 3X returns."
       />
+      <Footer />
     </>
   );
 }

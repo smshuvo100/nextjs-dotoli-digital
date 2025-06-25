@@ -1,4 +1,5 @@
 "use client";
+import Footer from "../components/Footer";
 import { HeroAllSection } from "../components/HeroAllSection";
 import { LogoTracker } from "../components/LogoTracker";
 import { ServicesSection } from "../components/ServicesSection";
@@ -62,6 +63,7 @@ export default function page() {
       />
 
       <LogoTracker />
+      <Footer />
     </>
   );
 }

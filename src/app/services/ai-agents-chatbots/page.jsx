@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer";
 import { HeroAllSection } from "../../components/HeroAllSection";
 import { ServiceDetailsSection } from "../../components/ServiceDetailsSection";
 /* 
@@ -51,6 +52,7 @@ export default function Page() {
         heading="AI-Powered LinkedIn Publishing Engine Using RSS + ChatGPT"
         text="We built a fully autonomous LinkedIn posting system that fetches updates via RSS, formats them using ChatGPT for platform-optimized copy, and publishes them directly to LinkedIn. A seamless solution for brands and thought leaders to maintain consistent, high-quality content without manual effort."
       />
+      <Footer />
     </>
   );
 }

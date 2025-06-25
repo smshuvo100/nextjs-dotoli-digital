@@ -1,8 +1,6 @@
 import { HeroAllSection } from "../../components/HeroAllSection";
 import { PortfolioImage } from "../../components/PortfolioImage";
-/* 
-PortfolioImage.jsx
-*/
+import Footer from "../../components/Footer";
 export default function Page() {
   return (
     <>
@@ -23,6 +21,7 @@ export default function Page() {
         img8="/images/project-8.webp"
         img9="/images/project-4.webp"
       />
+      <Footer />
     </>
   );
 }

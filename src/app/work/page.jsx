@@ -1,4 +1,5 @@
 "use client";
+import Footer from "../components/Footer";
 import { HeroAllSection } from "../components/HeroAllSection";
 import { LogoTracker } from "../components/LogoTracker";
 import { WorkSection1 } from "../components/WorkSection1";
@@ -14,7 +15,7 @@ export default function page() {
       <WorkSection1 />
 
       <LogoTracker />
-      {/* WorkSection1.jsx */}
+      <Footer />
     </>
   );
 }

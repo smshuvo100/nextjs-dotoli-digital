@@ -3,6 +3,7 @@
 import { ClientTestimonial } from "./components/ClientTestimonial";
 import { CounterSection } from "./components/CounterSection";
 import { DribbbleSection } from "./components/DribbbleSection";
+import Footer from "./components/Footer";
 import { HeroSection } from "./components/HeroSection";
 import { JungleSection } from "./components/JungleSection";
 import { LeftImgSection } from "./components/LeftImgSection";
@@ -93,6 +94,7 @@ export default function Home() {
       <DribbbleSection />
       <JungleSection title1={"Join "} title2={"With Us"} title3={""} />
       <SocialSection />
+      <Footer />
     </>
   );
 }

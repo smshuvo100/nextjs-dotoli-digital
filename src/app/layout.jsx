@@ -1,7 +1,7 @@
 import { Abril_Fatface, Inter } from "next/font/google";
 import localFont from "next/font/local";
 //.import LayoutWrapper from "./LayoutWrapper";
-import Footer from "./components/Footer";
+//import Footer from "./components/Footer";
 import Header from "./components/Header";
 import LoadingWrapper from "./components/LoadingWrapper";
 import ThemeProvider from "./components/ThemeProvider";
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
           <LoadingWrapper>
             <Header />
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </LoadingWrapper>
         </ThemeProvider>
       </body>

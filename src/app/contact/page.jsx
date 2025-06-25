@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Footer from "../components/Footer";
 import { HeroAllSection } from "../components/HeroAllSection";
 import { TextCounterSection } from "../components/TextCounterSection";
 
@@ -120,6 +121,7 @@ export default function page() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }
