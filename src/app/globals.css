@@ -416,7 +416,30 @@ menu
   text-decoration: none;
   transition: color 0.3s ease;
   display: block;
+  font-size: 65px;
+  line-height: 114px;
+  text-transform: capitalize;
+  margin-bottom: 0 !important;
 }
+/*ipad*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .mobile-menu .menu-link {
+    font-size: 49px;
+    line-height: 80px;
+  }
+}
+
+/*all mobile*/
+@media (max-width: 767px) {
+  body .mobile-menu .menu-link {
+    font-size: 32px;
+    line-height: 55px;
+  }
+  body .mobile-menu .menu-container {
+    justify-content: start;
+  }
+}
+
 .mobile-menu .menu-link:hover {
   color: var(--primary);
 }
@@ -1276,8 +1299,8 @@ section.dribbble-sec {
   margin-top: 27px;
 }
 .work-sec1 {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 .img-text-box img {
   border-radius: 32px;
