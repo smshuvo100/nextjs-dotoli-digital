@@ -1289,7 +1289,7 @@ section.dribbble-sec {
 
 /* 
 ======================
-  work-sec1
+  work-sec1 
 ======================
 */
 .work-sec1 ul {
@@ -1299,8 +1299,8 @@ section.dribbble-sec {
   margin-top: 27px;
 }
 .work-sec1 {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .img-text-box img {
   border-radius: 32px;
@@ -1331,6 +1331,14 @@ section.dribbble-sec {
   services-sec
 ======================
 */
+.services-sec .box.sm-right-title {
+  flex-direction: row-reverse;
+}
+.services-sec .box.sm-right-title .coll.sm1 {
+  display: flex;
+  justify-content: end;
+}
+
 .services-sec .box .btn {
   width: 100%;
 }

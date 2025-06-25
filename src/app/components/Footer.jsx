@@ -22,8 +22,9 @@ function Footer() {
         backgroundPositionX: "100%",
         scrollTrigger: {
           trigger: recentWorkSecRef.current,
-          start: "top 60%",
-          end: "bottom 70%",
+          /*  markers: true, */
+          start: "top 70%",
+          end: "bottom 100%",
           scrub: 2
         }
       });
@@ -41,8 +42,9 @@ function Footer() {
         backgroundPositionX: "100%",
         scrollTrigger: {
           trigger: recentWorkSecRef.current,
-          start: "top 50%",
-          end: "bottom 70%",
+          /*      markers: true, */
+          start: "top 70%",
+          end: "bottom 100%",
           scrub: 2
         }
       });

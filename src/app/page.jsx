@@ -77,7 +77,7 @@ export default function Home() {
         description={"Custom-built AI agents and automation flows powered by tools like Make.com, Zapier, and n8n—designed to qualify leads, automate support, and run your business on autopilot."}
         images={"k3.webp"}
         btn_text={"Explore work"}
-        btn_link={"/services/ai-agents-chatbots"}
+        btn_link={"/services/ai-agents-automation"}
       />
 
       <WhoWeAre

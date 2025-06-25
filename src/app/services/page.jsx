@@ -21,6 +21,7 @@ export default function page() {
       />
 
       <ServicesSection
+        smclass={"sm-right-title"}
         title={`Website <br />Development`}
         btn_link={"/services/website-development"}
         btn_text={"View project"}
@@ -37,6 +38,7 @@ export default function page() {
       />
 
       <ServicesSection
+        smclass={"sm-right-title"}
         title={`VR <br />Experiences`}
         btn_link={"/services/vr-experiences"}
         btn_text={"View project"}
@@ -50,6 +52,7 @@ export default function page() {
         btn_text={"Explore work`}
       />
       <ServicesSection
+        smclass={"sm-right-title"}
         title={`CRM & <br />Automation`}
         btn_link={"/services/crm-automation"}
         btn_text={"View project"}
@@ -57,7 +60,7 @@ export default function page() {
       />
       <ServicesSection
         title={`AI Agents & <br />Chatbots`}
-        btn_link={"/services/ai-agents-chatbots"}
+        btn_link={"/services/ai-agents-automation"}
         btn_text={"View project"}
         description={`Custom-built AI agents and automation flows powered by tools like Make.com, Zapier, and n8n—designed to qualify leads, automate support, and run your business on autopilot.`}
       />

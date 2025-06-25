@@ -6,7 +6,7 @@ import { useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export function ServicesSection({ title, description, list1, list2, btn_text, btn_link }) {
+export function ServicesSection({ title, description, list1, list2, btn_text, btn_link, smclass }) {
   const sectionRef = useRef(null);
 
   useGSAP(() => {
@@ -31,7 +31,7 @@ export function ServicesSection({ title, description, list1, list2, btn_text, bt
   return (
     <section className="services-sec" ref={sectionRef}>
       <div className="container">
-        <div className="box">
+        <div className={`box ${smclass ? smclass : ""}`}>
           <div className="coll sm1">
             <h2 className="title-2" dangerouslySetInnerHTML={{ __html: title }} />
           </div>
