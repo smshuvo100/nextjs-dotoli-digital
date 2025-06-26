@@ -79,11 +79,11 @@ function Header() {
 
             <div className="menu-social">
               <div className="info">
-                <a className="email" href="mailto:hello@trionn.com" tabIndex={isMenuOpen ? 0 : -1}>
-                  hello@trionn.com
+                <a className="email" href="mailto:info@dotolidigital.com" tabIndex={isMenuOpen ? 0 : -1}>
+                  info@dotolidigital.com
                 </a>
-                <a href="tel:+889824182099" tabIndex={isMenuOpen ? 0 : -1}>
-                  +88 98241 82099
+                <a href="tel:9543838093" tabIndex={isMenuOpen ? 0 : -1}>
+                  (954) 383-8093
                 </a>
               </div>
 

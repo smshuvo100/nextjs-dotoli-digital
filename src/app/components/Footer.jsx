@@ -78,16 +78,17 @@ function Footer() {
           <div className="boxa">
             <a className="f-link sm1" href="">
               <p className="ft1">Email</p>
-              <p className="ft2">info@market-target.com</p>
+              <p className="ft2">info@dotolidigital.com</p>
             </a>
             <a className="f-link sm2" href="">
               <p className="ft1">Call</p>
-              <p className="ft2">+31 6 22750959</p>
+              <p className="ft2">(954) 383-8093</p>
             </a>
             <a className="f-link sm4" href="">
               <p className="ft1">Address</p>
               <p className="ft2">
-                Based in the Netherlands, <br /> serving clients worldwide
+                1200 E Las Olas Blvd, <br />
+                Suite 103, Fort Lauderdale Florida 33301
               </p>
             </a>
           </div>
