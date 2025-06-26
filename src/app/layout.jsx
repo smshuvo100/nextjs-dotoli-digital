@@ -37,6 +37,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${abrilFatface.variable} ${inter.variable}`}>
       <head>
+        {/* ✅ Google Site Verification */}
+        <meta name="google-site-verification" content="nHO9-iQizhbV-n_oaaEX9jehexiiB6eg5_AI7_C8KS8" />
+
         {/* Google Tag Manager - Head */}
         <script
           dangerouslySetInnerHTML={{
