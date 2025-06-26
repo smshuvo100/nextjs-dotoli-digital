@@ -5,7 +5,7 @@ import Link from "next/link";
 import { HiOutlineArrowSmDown } from "react-icons/hi";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
-export function HeroAllSection({ title1, title2, description, id, btn_text, btn_link }) {
+export function HeroAllSection({ title1, title2, description, id, btn_text, btn_link, onBtnClick }) {
   const title1Ref = useRef(null);
   const title2Ref = useRef(null);
   const textRef = useRef(null);
@@ -72,6 +72,21 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
           </h1>
           <div className="text" ref={textRef}>
             <p className="text-center" dangerouslySetInnerHTML={{ __html: description }} />
+
+            {btn_text && (
+              <div className="btn-group">
+                <div className="btn">
+                  {onBtnClick ? (
+                    <button type="button" onClick={onBtnClick}>
+                      {btn_text}
+                    </button>
+                  ) : btn_link ? (
+                    <Link href={btn_link}>{btn_text}</Link>
+                  ) : null}
+                </div>
+              </div>
+            )}
+
             <div>
               <div className="scroll-next-sec">
                 <Link href={`#${id}`}>
@@ -79,16 +94,6 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
                 </Link>
               </div>
             </div>
-
-            {btn_link ? (
-              <div className="btn-group">
-                <div className="btn">
-                  <Link href={btn_link}>{btn_text}</Link>
-                </div>
-              </div>
-            ) : (
-              ""
-            )}
           </div>
         </div>
       </section>
