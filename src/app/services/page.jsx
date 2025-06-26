@@ -17,7 +17,7 @@ export default function page() {
         title={`Digital <br />Marketing`}
         btn_link={"/services/digital-marketing"}
         btn_text={"View project"}
-        description={`Data-driven SEO, targeted advertising, and content strategies to put you at the forefront of your market and multiply ROI.`}
+        description={`<strong>From traffic to traction — we turn clicks into clients with data-backed marketing.</strong> Data-driven SEO, targeted advertising, and content strategies to put you at the forefront of your market and multiply ROI.`}
       />
 
       <ServicesSection
@@ -42,7 +42,7 @@ export default function page() {
         title={`VR <br />Experiences`}
         btn_link={"/services/vr-experiences"}
         btn_text={"View project"}
-        description={`Where strategy meets style. From identity design to storytelling, we build brands that not only look good—but mean something.`}
+        description={`From lifelike 3D walkthroughs to fully immersive property tours — we bring empty plots to life before they’re built.`}
       />
       <ServicesSection
         title={`Branding & <br />Creative`}

@@ -50,7 +50,7 @@ function Header() {
             <nav className="menu-nav">
               <ul>
                 <li>
-                  <Link href="/work" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
+                  <Link href="/our-work" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
                     work
                   </Link>
                 </li>

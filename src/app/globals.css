@@ -1007,7 +1007,7 @@ section.hero-wrapper h1.title-1.text-center {
   border-color: #121315;
   margin-left: 5px;
   margin-right: 5px;
-  height: 25rem;
+  height: 17rem;
   width: 25rem;
   min-width: 25rem;
   align-items: center;
@@ -1331,12 +1331,21 @@ section.dribbble-sec {
   services-sec
 ======================
 */
+.services-sec .box.sm-right-title .coll.sm1 h2.title-2 {
+  text-align: right;
+}
+
+.services-sec .box.sm-right-title .coll.sm1 .btn {
+  display: flex;
+  justify-content: end;
+}
 .services-sec .box.sm-right-title {
   flex-direction: row-reverse;
 }
 .services-sec .box.sm-right-title .coll.sm1 {
   display: flex;
   justify-content: end;
+  flex-direction: column;
 }
 
 .services-sec .box .btn {

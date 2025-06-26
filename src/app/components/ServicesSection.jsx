@@ -34,19 +34,19 @@ export function ServicesSection({ title, description, list1, list2, btn_text, bt
         <div className={`box ${smclass ? smclass : ""}`}>
           <div className="coll sm1">
             <h2 className="title-2" dangerouslySetInnerHTML={{ __html: title }} />
+            {btn_link && (
+              <div className="btn">
+                <Link href={btn_link}>{btn_text}</Link>
+              </div>
+            )}
           </div>
           <div className="coll sm2">
-            <p className="text-1">{description}</p>
+            <p className="text-1" dangerouslySetInnerHTML={{ __html: description }} />
             <div className="list-flex">
               <div className="list-text" dangerouslySetInnerHTML={{ __html: list1 }} />
               <div className="list-text" dangerouslySetInnerHTML={{ __html: list2 }} />
             </div>
           </div>
-          {btn_link && (
-            <div className="btn">
-              <Link href={btn_link}>{btn_text}</Link>
-            </div>
-          )}
         </div>
       </div>
     </section>
