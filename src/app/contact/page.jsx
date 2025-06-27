@@ -1,3 +1,4 @@
+/*  app/contact/page.jsx  */
 "use client";
 import Image from "next/image";
 import { useState } from "react";
@@ -5,7 +6,7 @@ import Footer from "../components/Footer";
 import { HeroAllSection } from "../components/HeroAllSection";
 import { TextCounterSection } from "../components/TextCounterSection";
 
-/* --------------------------- helper component --------------------------- */
+/* ───────────────────────── progress bar ───────────────────────── */
 function ProgressBar({ current, labels, setStep }) {
   return (
     <ol className="progress-bar">
@@ -18,13 +19,12 @@ function ProgressBar({ current, labels, setStep }) {
   );
 }
 
-/* --------------------------- main page --------------------------- */
+/* ───────────────────────── main page ───────────────────────── */
 export default function ContactPage() {
   const [step, setStep] = useState(0);
   const [status, setStatus] = useState("");
 
-  /* simple container for all form data */
-  const [formData, setFormData] = useState({
+  const empty = {
     name: "",
     email: "",
     phone: "",
@@ -34,25 +34,57 @@ export default function ContactPage() {
     goal: "",
     budget: "",
     referral: ""
-  });
+  };
+  const [formData, setFormData] = useState(empty);
 
-  /* quick two-liner for controlled inputs */
-  const onChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
+  /* keep inputs controlled */
+  const onChange = (e) => setFormData((p) => ({ ...p, [e.target.name]: e.target.value }));
 
-  /* ------------- submit to /api/contact only on final step ------------- */
+  /* single submit handler – advances steps & sends mail on last step */
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const form = e.currentTarget;
+
+    /* check visible required inputs on current step */
+    const visibleInvalid = Array.from(form.querySelectorAll("[required]")).some((inp) => inp.closest(".form-group")?.offsetParent !== null && !inp.checkValidity());
+    if (visibleInvalid) {
+      form.reportValidity();
+      return;
+    }
+
+    /* if not last step → just advance */
+    if (step < steps.length - 1) {
+      setStep(step + 1);
+      return;
+    }
+
+    /* guard against totally empty payload */
+    const hasContent = Object.values(formData).some((v) => typeof v === "string" && v.trim() !== "");
+    if (!hasContent) {
+      setStatus("Please fill in the form before submitting.");
+      return;
+    }
+
+    /* final step – send email */
     setStatus("Sending…");
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData)
-    });
-    setStatus(res.ok ? "Message sent successfully!" : "Failed to send message.");
-    if (res.ok) setFormData({}); // or reset fields manually
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
+      setStatus(res.ok ? "Message sent successfully!" : "Failed to send message.");
+      if (res.ok) {
+        setFormData(empty);
+        setStep(0); // reset wizard
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus("Failed to send message.");
+    }
   };
 
-  /* ----------------------------- step markup ---------------------------- */
+  /* ─────────────── step definitions ─────────────── */
   const steps = [
     {
       label: "About You",
@@ -128,21 +160,20 @@ export default function ContactPage() {
           <label htmlFor="referral">How did you hear about us?</label>
           <select id="referral" name="referral" value={formData.referral} onChange={onChange}>
             <option value="">Select</option>
-            <option>Google</option>
-            <option>Social Media</option>
-            <option>Referral</option>
-            <option>Saw your work</option>
-            <option>Other</option>
+            <option value="Google">Google</option>
+            <option value="Social Media">Social Media</option>
+            <option value="Referral">Referral</option>
+            <option value="Saw your work">Saw your work</option>
+            <option value="Other">Other</option>
           </select>
         </div>
       )
     }
   ];
 
-  /* ----------------------------- page JSX ------------------------------ */
+  /* ─────────────── page JSX ─────────────── */
   return (
     <>
-      {/* --- HERO + INTRO --- */}
       <HeroAllSection
         title1="Let’s Talk About"
         title2="Growing Your Business"
@@ -150,23 +181,14 @@ export default function ContactPage() {
       />
       <TextCounterSection text="Start your project — or just start the conversation." paragraph="Tell us what’s not working — and where you want to go. We’ll respond with clear steps to help." />
 
-      {/* --- CONTACT SECTION --- */}
       <section className="contact-sec">
         <div className="container">
           <div className="flex-box">
-            <form
-              className="contact-form"
-              onSubmit={handleSubmit}
-              /* prevent native validation jumping between steps */
-              noValidate
-            >
-              {/* --- STEP INDICATOR --- */}
+            <form className="contact-form" onSubmit={handleSubmit} noValidate>
               <ProgressBar current={step} setStep={setStep} labels={steps.map((s) => s.label)} />
 
-              {/* --- STEP CONTENT --- */}
               {steps[step].content}
 
-              {/* --- NAV BUTTONS --- */}
               <div className="btn-group" style={{ marginTop: "2rem" }}>
                 {step > 0 && (
                   <button type="button" className="btn prev-btn" onClick={() => setStep(step - 1)}>
@@ -175,19 +197,7 @@ export default function ContactPage() {
                 )}
 
                 {step < steps.length - 1 ? (
-                  <button
-                    type="button"
-                    className="btn next-btn"
-                    onClick={() => {
-                      /* only move forward if required inputs inside this step are valid */
-                      const form = document.querySelector("form.contact-form");
-                      const stepInputs = form.querySelectorAll("[required]:not([disabled])");
-                      /* check validity only of visible (current) inputs */
-                      const visibleInvalid = Array.from(stepInputs).some((input) => input.closest(".form-group")?.offsetParent !== null && !input.checkValidity());
-                      if (!visibleInvalid) setStep(step + 1);
-                      else form.reportValidity();
-                    }}
-                  >
+                  <button type="submit" className="btn next-btn">
                     Next
                   </button>
                 ) : (
