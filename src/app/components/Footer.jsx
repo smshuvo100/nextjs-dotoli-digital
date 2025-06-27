@@ -87,8 +87,9 @@ function Footer() {
             <a className="f-link sm4" href="">
               <p className="ft1">Address</p>
               <p className="ft2">
-                1200 E Las Olas Blvd, <br />
-                Suite 103, Fort Lauderdale Florida 33301
+                Proudly based in Florida.
+                <br />
+                Serving clients across the U.S. and worldwide.
               </p>
             </a>
           </div>
