@@ -67,7 +67,8 @@ function Footer() {
               </h3>
             </div>
             <div className="btn">
-              <Link href="/about">Start Your Project</Link>
+              {/*  */}
+              <Link href="/contact">Book a Free Strategy Call</Link>
             </div>
           </div>
         </div>

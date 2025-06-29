@@ -51,27 +51,27 @@ function Header() {
               <ul>
                 <li>
                   <Link href="/our-work" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
-                    work
+                    Our Work
                   </Link>
                 </li>
                 <li>
                   <Link href="/about" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
-                    about
+                    About Us
                   </Link>
                 </li>
                 <li>
                   <Link href="/services" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
-                    services
+                    Services
                   </Link>
                 </li>
                 <li>
                   <Link href="/team" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
-                    team
+                    Teams
                   </Link>
                 </li>
                 <li>
                   <Link href="/contact" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
-                    contact
+                    Contact Us
                   </Link>
                 </li>
               </ul>
