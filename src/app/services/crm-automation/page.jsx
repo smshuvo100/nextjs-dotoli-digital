@@ -1,14 +1,21 @@
+"use client";
+import { useState } from "react";
 import Footer from "../../components/Footer";
 import { HeroAllSection } from "../../components/HeroAllSection";
+import PopupForm from "../../components/PopupForm";
 import { ServiceDetailsSection } from "../../components/ServiceDetailsSection";
 export default function Page() {
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <>
+      {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
         id="secrion1"
         title1="Automate Success: "
         title2="Smart CRM Solutions."
         description={`Transform your customer management with tailored CRM systemsand<br/> intelligent automation. We integrate technology that saves you time,<br/> nurtures leads, and delivers personalized experiences at scale.`}
+        btn_text="Book a Free Strategy Call"
+        onBtnClick={() => setShowPopup(true)}
       />
       {/* <PortfolioImage
         img1="/images/project-1.webp"

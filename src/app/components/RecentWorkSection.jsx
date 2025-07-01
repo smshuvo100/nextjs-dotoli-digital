@@ -57,7 +57,7 @@ export function RecentWorkSection() {
         <div className="container">
           <div className="flex-box">
             <div className="text">
-              <h3 className="title-3 text-left">
+              <h3 className="title-1 text-left">
                 <span className="block sm1" ref={text1Ref}>
                   What
                 </span>
@@ -66,11 +66,8 @@ export function RecentWorkSection() {
                 </span>
               </h3>
 
-              <p className="text-2">
-                We help consultants, agencies, trades, and local service brands
-                <br /> gain visibility and convert attention into action. Every strategy
-                <br /> we create blends three powerful elements:
-                <br />
+              <p className="text-1">
+                We help consultants, agencies, trades, and local service brands gain visibility and convert attention into action. Every strategy we create blends three powerful elements:
               </p>
             </div>
             <div className="btn">{/* <Link href="/about">Explore work</Link> */}</div>

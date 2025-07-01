@@ -60,6 +60,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+ul {
+  margin-left: 21px;
+}
+ul li {
+  margin-bottom: 15px;
+}
 /* Typography
 ---------------------
 */
@@ -101,8 +107,8 @@ h6 span {
   margin-bottom: 30px;
 }
 .title-3 {
-  font-size: 110px;
-  line-height: 110px;
+  font-size: 64px;
+  line-height: 70px;
   margin-bottom: 30px;
 }
 .title-4 {
@@ -453,6 +459,7 @@ menu
   height: calc(100vh - 70px);
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 80;
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   transition: opacity 0.3s ease;
   opacity: 0;
@@ -666,9 +673,15 @@ section.hero-wrapper h1.title-1.text-center {
   recent-work-sec
 ============================
 */
+.recent-work-sec .flex-box .text {
+  width: 60%;
+}
+.recent-work-sec .flex-box .right-text {
+  width: 40%;
+}
 .recent-work-sec {
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   overflow: hidden;
 }
 .recent-work-sec .flex-box {
@@ -683,8 +696,8 @@ section.hero-wrapper h1.title-1.text-center {
   background-size: 200% 100%;
   background-position-x: 0%;
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   position: relative;
 }
 .recent-work-sec .title-3 .block {
@@ -692,8 +705,8 @@ section.hero-wrapper h1.title-1.text-center {
   background-size: 200% 100%;
   background-position-x: 0%;
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   position: relative;
 }
 
@@ -1124,8 +1137,8 @@ section.dribbble-sec {
   background-size: 200% 100%;
   background-position-x: 0%;
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   position: relative;
 }
 .jungle-sec .title-3 .block {
@@ -1133,8 +1146,8 @@ section.dribbble-sec {
   background-size: 200% 100%;
   background-position-x: 0%;
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   position: relative;
 }
 .jungle-sec .btn {

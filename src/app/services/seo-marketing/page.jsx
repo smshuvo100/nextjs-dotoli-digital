@@ -1,14 +1,19 @@
+"use client";
 import Footer from "../../components/Footer";
 import { HeroAllSection } from "../../components/HeroAllSection";
+import PopupForm from "../../components/PopupForm";
 import { ServiceDetailsSection } from "../../components/ServiceDetailsSection";
 export default function page() {
   return (
     <>
+      {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
         id="secrion1"
         title1="Expert SEO Marketing"
         title2="Services That Deliver Results"
         description={`Our SEO marketing services are designed to improve your search engine rankings, increase organic traffic, and convert visitors into customers. Let us help you dominate search results.`}
+        btn_text="Book a Free Strategy Call"
+        onBtnClick={() => setShowPopup(true)}
       />
 
       {/* <PortfolioLightbox

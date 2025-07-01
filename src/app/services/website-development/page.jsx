@@ -1,17 +1,25 @@
+"use client";
+import { useState } from "react";
 import Footer from "../../components/Footer";
 import { HeroAllSection } from "../../components/HeroAllSection";
+import PopupForm from "../../components/PopupForm";
 import { PortfolioImage } from "../../components/PortfolioImage";
+
 /* 
 PortfolioImage.jsx
 */
 export default function Page() {
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <>
+      {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
         id="secrion1"
         title1="Building Stunning "
         title2="Websites that Convert"
         description={`Our web development team crafts high-end, mobile-responsive websites<br/> that not only look exceptional but also drive business growth.Specializing<br/>   in sitesthat wow investors and customers alike.`}
+        btn_text="Book a Free Strategy Call"
+        onBtnClick={() => setShowPopup(true)}
       />
       <PortfolioImage
         img1="/images/w2.webp"

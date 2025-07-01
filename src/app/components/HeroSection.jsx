@@ -6,7 +6,7 @@ import { HiOutlineArrowSmDown } from "react-icons/hi";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 
-export function HeroSection() {
+export function HeroSection({ title1, title2, text, btn_text1, btn_link1, onBtnClick, btn_text2, btn_link2 }) {
   const title1Ref = useRef(null);
   const title2Ref = useRef(null);
   const textRef = useRef(null);
@@ -92,17 +92,14 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
         <div className="container">
           <h1 className="title-1 text-center">
             <span ref={title1Ref} className="block">
-              Ai-Powered Marketing
+              {title1}
             </span>
             <span ref={title2Ref} className="block">
-              For Visionary Brands.
+              {title2}
             </span>
           </h1>
           <div className="text" ref={textRef}>
-            <p className="text-center">
-              Elevating businesses with bespoke digital solutions, advanced AI, <br /> and unparalleled creativity - from Florida to the world.
-              <br />
-            </p>
+            <p className="text-center" dangerouslySetInnerHTML={{ __html: text }} />
             <div>
               <div className="scroll-next-sec">
                 <Link href="#video-sec">
@@ -113,10 +110,16 @@ translate: none; rotate: none; scale: none; filter: none; transform: translate(0
           </div>
           <div className="btn-group">
             <div className="btn" ref={btn1Ref}>
-              <Link href="/about">SCHEDULE YOUR PRIVATE CONSULTATION</Link>
+              {onBtnClick ? (
+                <button type="button" onClick={onBtnClick}>
+                  {btn_text1}
+                </button>
+              ) : btn_link1 ? (
+                <Link href={btn_link1}>{btn_text1}</Link>
+              ) : null}
             </div>
             <div className="btn" ref={btn2Ref}>
-              <Link href="/about">REQUEST A PROPOSAL</Link>
+              {btn_text2 && btn_link2 ? <Link href={btn_link2}>{btn_text2}</Link> : null}
             </div>
           </div>
         </div>

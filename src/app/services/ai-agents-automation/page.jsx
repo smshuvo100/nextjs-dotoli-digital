@@ -1,12 +1,11 @@
 "use client";
 import { useState } from "react";
+import PopupForm from "../../components/PopupForm";
+
 import Footer from "../../components/Footer";
 import { HeroAllSection } from "../../components/HeroAllSection";
-import PopupForm from "../../components/PopupForm";
 import { ServiceDetailsSection } from "../../components/ServiceDetailsSection";
-/* 
-PortfolioImage.jsx
-*/
+
 export default function Page() {
   const [showPopup, setShowPopup] = useState(false);
   return (
@@ -18,7 +17,7 @@ export default function Page() {
         title1="AI-Powered Agents That"
         title2="Engage, Qualify With You."
         description={`We build intelligent AI agents and chatbots powered by tools like Make.com, Zapier,<br /> and n8n—designed to engage leads, qualify prospects, and automate<br /> conversations 24/7 while staying true to your brand voice.`}
-        btn_text="Contact Us"
+        btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
       />
 

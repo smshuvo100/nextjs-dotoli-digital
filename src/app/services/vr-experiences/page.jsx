@@ -1,14 +1,21 @@
-import { HeroAllSection } from "../../components/HeroAllSection";
-import { PortfolioImage } from "../../components/PortfolioImage";
+"use client";
+import { useState } from "react";
 import Footer from "../../components/Footer";
+import { HeroAllSection } from "../../components/HeroAllSection";
+import PopupForm from "../../components/PopupForm";
+import { PortfolioImage } from "../../components/PortfolioImage";
 export default function Page() {
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <>
+      {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
         id="secrion1"
         title1="Immersive VR Experiences -"
         title2="Step Into the Future."
         description={`Wow your audience with fully immersive virtual reality experiences. From virtual<br/> showrooms to interactive product demos, our VR solutions create<br/> unforgettable engagements that set you apart from the competition.`}
+        btn_text="Book a Free Strategy Call"
+        onBtnClick={() => setShowPopup(true)}
       />
       <PortfolioImage
         img1="/images/project-1.webp"

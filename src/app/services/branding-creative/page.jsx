@@ -1,14 +1,22 @@
+"use client";
+import { useState } from "react";
 import Footer from "../../components/Footer";
 import { HeroAllSection } from "../../components/HeroAllSection";
+import PopupForm from "../../components/PopupForm";
 import { PortfolioImage } from "../../components/PortfolioImage";
 export default function Page() {
+  const [showPopup, setShowPopup] = useState(false);
+
   return (
     <>
+      {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
         id="secrion1"
         title1="Branding & Creative - Design"
         title2=" That Inspires & Influences."
         description={`From concept to reality, we craft visual identities, graphics, and videos<br/> that captivate your audience. Our creative team blends artistic<br/> finesse with strategic insight to elevate your brand above the rest.`}
+        btn_text="Book a Free Strategy Call"
+        onBtnClick={() => setShowPopup(true)}
       />
       <PortfolioImage
         img1="/images/project-1.webp"

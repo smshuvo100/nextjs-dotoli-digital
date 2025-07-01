@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Footer from "../components/Footer";
 import { HeroAllSection } from "../components/HeroAllSection";
+import PopupForm from "../components/PopupForm";
 import { TextCounterSection } from "../components/TextCounterSection";
 
 /* ───────────────────────── progress bar ───────────────────────── */
@@ -172,12 +173,16 @@ export default function ContactPage() {
   ];
 
   /* ─────────────── page JSX ─────────────── */
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <>
+      {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
         title1="Let’s Talk About"
         title2="Growing Your Business"
         description={`Need better visibility, stronger branding, <br/> or scroll-stopping video? Tell us what you<br/> need — we'll help you get there.`}
+        btn_text="Book a Free Strategy Call"
+        onBtnClick={() => setShowPopup(true)}
       />
       <TextCounterSection text="Start your project — or just start the conversation." paragraph="Tell us what’s not working — and where you want to go. We’ll respond with clear steps to help." />
 

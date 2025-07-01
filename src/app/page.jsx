@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { ClientTestimonial } from "./components/ClientTestimonial";
 import { CounterSection } from "./components/CounterSection";
 import { DribbbleSection } from "./components/DribbbleSection";
@@ -9,15 +10,28 @@ import { JungleSection } from "./components/JungleSection";
 import { LeftImgSection } from "./components/LeftImgSection";
 import { NewsTracker } from "./components/NewsTracker";
 import { PageTitle } from "./components/PageTitle";
+import PopupForm from "./components/PopupForm";
 import { RecentWorkSection } from "./components/RecentWorkSection";
 import { RightImgSection } from "./components/RightImgSection";
 import { SocialSection } from "./components/SocialSection";
 import { VideoSection } from "./components/VideoSection";
 import { WhoWeAre } from "./components/WhoWeAre";
+
 export default function Home() {
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <>
-      <HeroSection />
+      {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
+
+      <HeroSection
+        title1={"Ai-Powered Marketing"}
+        title2={"For Visionary Brands."}
+        text={`Elevating businesses with bespoke digital solutions, advanced AI, <br /> and unparalleled creativity - from Florida to the world.`}
+        btn_text1={"Schedule Your Private Consultation"}
+        onBtnClick={() => setShowPopup(true)}
+        btn_text2={"Request a Proposal"}
+        btn_link2={"/contact"}
+      />
       <VideoSection />
       <RecentWorkSection />
 
@@ -37,10 +51,8 @@ export default function Home() {
         btn_link={"/services/website-development"}
       />
       <RightImgSection
-        title={"Seo Marketing"}
-        description={
-          "Our SEO marketing services are designed to improve your search engine rankings, increase organic traffic, and convert visitors into customers. Let us help you dominate search results."
-        }
+        title={"Seo Expert"}
+        description={"Our SEO services are designed to improve your search engine rankings, increase organic traffic, and convert visitors into customers. Let us help you dominate search results."}
         images={"loftloom-main-landscape.webp"}
         btn_text={"Explore work"}
         btn_link={"/services/seo-marketing"}
@@ -83,7 +95,7 @@ export default function Home() {
       <WhoWeAre
         title1={"Who"}
         title2={"We Are"}
-        paragraph={`Dotoli Digital is a Florida-based team of digital visionaries and strategists.<br/>  Since our inception, we’ve partnered with industry leaders and ambitious<br/> brands to deliver bespoke marketing solutions powered by AI and creativity.`}
+        paragraph={`Dotoli Digital is a Florida-based team of digital visionaries and strategists.  Since our inception, we've partnered with industry leaders and ambitiousbrands to deliver bespoke marketing solutions powered by AI and creativity.`}
         btn_text={"Meet the Team"}
         btn_link={"/about"}
       />

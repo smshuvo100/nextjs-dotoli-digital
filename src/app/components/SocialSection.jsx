@@ -14,10 +14,6 @@ export function SocialSection() {
         </a>
 
         <a className="social-item" href="">
-          <p>Vimeo</p>
-          <Image src="/images/vimeo1.svg" alt="" width={64} height={64} />
-        </a>
-        <a className="social-item" href="">
           <p>YouTube </p>
           <Image src="/images/youtube1.svg" alt="" width={64} height={64} />
         </a>

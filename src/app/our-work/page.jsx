@@ -1,17 +1,23 @@
 "use client";
+import { useState } from "react";
 import Footer from "../components/Footer";
 import { HeroAllSection } from "../components/HeroAllSection";
 import { LogoTracker } from "../components/LogoTracker";
+import PopupForm from "../components/PopupForm";
 import { PortfolioImage } from "../components/PortfolioImage";
 import { ServiceDetailsSection } from "../components/ServiceDetailsSection";
 export default function page() {
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <>
+      {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
         id={"sm-bg-text-sec"}
-        title1={"work that builds trust"}
+        title1={"Work that builds trust"}
         title2={"and drives results"}
         description={`Explore how we help service businesses stand out,<br/> rank higher, and convert better — through SEO, branding,<br/> and aerial content that moves people.`}
+        btn_text="Book a Free Strategy Call"
+        onBtnClick={() => setShowPopup(true)}
       />
       {/* ai-agents-automation */}
       <ServiceDetailsSection
