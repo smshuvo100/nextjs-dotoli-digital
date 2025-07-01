@@ -108,7 +108,7 @@ h6 span {
 }
 .title-3 {
   font-size: 64px;
-  line-height: 70px;
+  line-height: 74px;
   margin-bottom: 30px;
 }
 .title-4 {
@@ -1220,7 +1220,6 @@ section.dribbble-sec {
   background-position: center center;
 }
 .sm-bg-text-sec .title-3.text-center {
-  line-height: 120px;
   z-index: 1;
   position: relative;
   color: #fff;
@@ -1554,7 +1553,10 @@ popup
   align-items: center;
   z-index: 1000;
 }
-
+.popup-content .btn.form-btn {
+  justify-content: center !important;
+  margin-top: 30px;
+}
 .popup-content {
   background: var(--background);
   padding: 2rem;

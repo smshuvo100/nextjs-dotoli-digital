@@ -6,17 +6,14 @@ export default function PopupForm({ onClose }) {
   const [status, setStatus] = useState("");
   const overlayRef = useRef(null);
 
-  /* ESC to close */
   useEffect(() => {
     const esc = (e) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", esc);
     return () => window.removeEventListener("keydown", esc);
   }, [onClose]);
 
-  /* click-outside to close */
   const handleOverlayClick = (e) => e.target === overlayRef.current && onClose();
 
-  /* submit → POST /api/popup */
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending…");
@@ -52,6 +49,11 @@ export default function PopupForm({ onClose }) {
           </div>
 
           <div className="form-group">
+            <label htmlFor="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890" />
+          </div>
+
+          <div className="form-group">
             <label htmlFor="email">Email Address*</label>
             <input type="email" id="email" name="email" required placeholder="you@example.com" />
           </div>
@@ -67,6 +69,18 @@ export default function PopupForm({ onClose }) {
               <option>VR / 3D Walkthrough</option>
               <option>Branding & Creative</option>
               <option>Not Sure / Let’s Discuss</option>
+            </select>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="budget">Estimated Budget*</label>
+            <select id="budget" name="budget" required>
+              <option value="">Select</option>
+              <option>Less than $1,000</option>
+              <option>$1,000–$5,000</option>
+              <option>$5,000–$10,000</option>
+              <option>$10,000+</option>
+              <option>Not sure yet</option>
             </select>
           </div>
 

@@ -3,14 +3,12 @@ import nodemailer from "nodemailer";
 
 export async function POST(req) {
   try {
-    const data = await req.json(); // { name, email, service, message }
+    const data = await req.json();
 
-    /* validate minimal required fields */
-    if (!data.name || !data.email || !data.service) {
+    if (!data.name || !data.email || !data.service || !data.phone || !data.budget) {
       return new Response("Missing fields", { status: 400 });
     }
 
-    /* Gmail transporter (App Password required) */
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 465,
@@ -21,7 +19,7 @@ export async function POST(req) {
       }
     });
 
-    await transporter.verify(); // fail fast if creds wrong
+    await transporter.verify();
 
     await transporter.sendMail({
       from: `"Dotoli Digital" <${process.env.GMAIL_USER}>`,
@@ -31,8 +29,10 @@ export async function POST(req) {
       html: `
         <h2>New Popup Lead</h2>
         <p><b>Name:</b> ${data.name}</p>
+        <p><b>Phone:</b> ${data.phone}</p>
         <p><b>Email:</b> ${data.email}</p>
         <p><b>Service:</b> ${data.service}</p>
+        <p><b>Budget:</b> ${data.budget}</p>
         <p><b>Message:</b><br/>${(data.message || "-").replace(/\n/g, "<br/>")}</p>
       `
     });
