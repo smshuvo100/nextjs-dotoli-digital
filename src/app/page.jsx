@@ -17,6 +17,7 @@ import { SocialSection } from "./components/SocialSection";
 import { VideoSection } from "./components/VideoSection";
 import { WhoWeAre } from "./components/WhoWeAre";
 
+/* sm shuvoS */
 export default function Home() {
   const [showPopup, setShowPopup] = useState(false);
   return (
