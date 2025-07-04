@@ -55,7 +55,7 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
+                  <Link href="/about-us" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
                     About Us
                   </Link>
                 </li>

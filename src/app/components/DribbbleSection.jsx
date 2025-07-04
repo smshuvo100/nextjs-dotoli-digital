@@ -359,7 +359,7 @@ export function DribbbleSection() {
         <div className="container">
           <div className="dribbble-wrapper">
             <div className="dribbble-middle-text">
-              <Image src="/images/dribbble-logo.webp" alt="Logo" width={200} height={60} priority />
+              <Image src="/images/logo.png" alt="Logo" width={130} height={60} priority />
               <p className="text-2">
                 <strong>Design that Speaks. Strategy that Performs. </strong>
                 Explore the creative edge where visuals meet value.

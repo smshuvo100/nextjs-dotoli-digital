@@ -36,6 +36,11 @@ export default function About() {
           • <strong>AI-Native Thinking — </strong>We’re not adapting to AI; we’re built on it.<br />
           • <strong>Flexible, Transparent, Fast — </strong>We move with clarity and urgency to deliver results, not fluff.
       */}
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <WhoWeAre
         title1="Why Clients"
         title2="Choose Us"
@@ -73,6 +78,11 @@ export default function About() {
         btn_text="Book a Free Consultation"
         btn_link="/contact"
       />
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
 
       {/* ───── COUNTERS / METRICS ───── */}
       <CounterSection />

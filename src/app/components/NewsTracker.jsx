@@ -50,46 +50,69 @@ export function NewsTracker() {
     <section className="news-tracker" ref={newsTrackerRef}>
       <div className="ticker" ref={track1Ref}>
         <h2 className="ticker__run title-3">
-          {/* 
-          
-          
-          
-
-
-
-
-          */}
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
-          <span>Digital Marketing . Website Development . CRM & Automation </span>
+          <span> Digital Marketing . Website Development . CRM & Automation</span>     
+          <span> Digital Marketing . Website Development . CRM & Automation</span>     
+          <span> Digital Marketing . Website Development . CRM & Automation</span>     
+          <span> Digital Marketing . Website Development . CRM & Automation</span>     
+          <span> Digital Marketing . Website Development . CRM & Automation</span>     
+          <span> Digital Marketing . Website Development . CRM & Automation</span>     
+          <span> Digital Marketing . Website Development . CRM & Automation</span>     
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+          <span> Digital Marketing . Website Development . CRM & Automation</span> 
+              
         </h2>
       </div>
 
       <div className="ticker arabic" ref={track2Ref}>
         <h2 className="ticker__run title-3">
-          <span>AI Agents & Chatbots . Branding & Creative .VR Experiences</span>
-          <span>AI Agents & Chatbots . Branding & Creative .VR Experiences</span>
-          <span>AI Agents & Chatbots . Branding & Creative .VR Experiences</span>
-          <span>AI Agents & Chatbots . Branding & Creative .VR Experiences</span>
-          <span>AI Agents & Chatbots . Branding & Creative .VR Experiences</span>
-          <span>AI Agents & Chatbots . Branding & Creative .VR Experiences</span>
-          <span>AI Agents & Chatbots . Branding & Creative .VR Experiences</span>
-          <span>AI Agents & Chatbots . Branding & Creative .VR Experiences</span>
-          <span>AI Agents & Chatbots . Branding & Creative .VR Experiences</span>
-          <span>AI Agents & Chatbots . Branding & Creative .VR Experiences</span>
-          <span>AI Agents & Chatbots . Branding & Creative .VR Experiences</span>
-          <span>AI Agents & Chatbots . Branding & Creative .VR Experiences</span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
+          <span>AI Agents & Chatbots . Branding & Creative . VR Experiences </span>
         </h2>
       </div>
     </section>

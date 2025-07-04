@@ -101,18 +101,18 @@ export function CounterSection() {
             <div className="flex-box a1">
               <div className="box2 sm1" ref={boxLeftRef1}>
                 <h2 className="num">
-                  10<sup>+</sup>
+                  10<sup> + years</sup>
                 </h2>
                 <div className="text">
-                  <p className="text-2">years of seo & brand experience</p>
+                  <p className="text-2">Seo & Brand Experience</p>
                 </div>
               </div>
               <div className="box2 sm3" ref={boxLeftRef2}>
                 <h2 className="num">
-                  100<sup>+</sup>
+                  100<sup> +</sup>
                 </h2>
                 <div className="text">
-                  <p className="text-2">websites developed</p>
+                  <p className="text-2">Websites Developed</p>
                 </div>
               </div>
             </div>
@@ -120,19 +120,19 @@ export function CounterSection() {
             <div className="flex-box a2">
               <div className="box2 sm2" ref={boxRightRef1}>
                 <h2 className="num">
-                  25<sup>+</sup>
+                  25<sup> +</sup>
                 </h2>
                 <div className="text">
-                  <p className="text-2">brands repositioned</p>
+                  <p className="text-2">Brands Repositioned</p>
                 </div>
               </div>
 
               <div className="box2 sm4" ref={boxRightRef2}>
                 <h2 className="num">
-                  1<sup></sup>
+                  1<sup> Goal</sup>
                 </h2>
                 <div className="text">
-                  <p className="text-2">goal your growth</p>
+                  <p className="text-2">Your Growth</p>
                 </div>
               </div>
             </div>

@@ -68,7 +68,7 @@ export default function PopupForm({ onClose }) {
               <option>Website or Landing Page</option>
               <option>VR / 3D Walkthrough</option>
               <option>Branding & Creative</option>
-              <option>Not Sure / Let’s Discuss</option>
+              <option>Not Sure / Let's Discuss</option>
             </select>
           </div>
 
@@ -77,17 +77,14 @@ export default function PopupForm({ onClose }) {
             <select id="budget" name="budget" required>
               <option value="">Select</option>
               <option>Less than $1,000</option>
-              <option>$1,000–$5,000</option>
-              <option>$5,000–$10,000</option>
+              <option>$1,000-$5,000</option>
+              <option>$5,000-$10,000</option>
               <option>$10,000+</option>
               <option>Not sure yet</option>
             </select>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="message">Message (optional)</label>
-            <textarea id="message" name="message" rows="4" placeholder="Briefly share what you’re looking for." />
-          </div>
+     
 
           <div className="btn form-btn">
             <button type="submit">Book My Free Consultation</button>

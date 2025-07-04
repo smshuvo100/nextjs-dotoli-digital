@@ -98,14 +98,14 @@ export default function Home() {
         title2={"We Are"}
         paragraph={`Dotoli Digital is a Florida-based team of digital visionaries and strategists.  Since our inception, we've partnered with industry leaders and ambitiousbrands to deliver bespoke marketing solutions powered by AI and creativity.`}
         btn_text={"Meet the Team"}
-        btn_link={"/about"}
+        btn_link={"/team"}
       />
       <CounterSection />
-      <PageTitle />
+   {/*    <PageTitle /> */}
       <ClientTestimonial />
       <NewsTracker />
       <DribbbleSection />
-      <JungleSection title1={"Join "} title2={"With Us"} title3={""} />
+      <JungleSection title1={"Join Us"} title2={""} title3={""} />
       <SocialSection />
       <Footer />
     </>

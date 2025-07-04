@@ -33,7 +33,6 @@ export async function POST(req) {
         <p><b>Email:</b> ${data.email}</p>
         <p><b>Service:</b> ${data.service}</p>
         <p><b>Budget:</b> ${data.budget}</p>
-        <p><b>Message:</b><br/>${(data.message || "-").replace(/\n/g, "<br/>")}</p>
       `
     });
 

@@ -86,7 +86,7 @@ function Footer() {
               <p className="ft2">(954) 383-8093</p>
             </a>
             <a className="f-link sm4" href="">
-              <p className="ft1">Address</p>
+              <p className="ft1"></p>
               <p className="ft2">
                 Proudly based in Florida.
                 <br />

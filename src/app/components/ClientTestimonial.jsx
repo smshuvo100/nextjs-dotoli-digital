@@ -1,37 +1,47 @@
-import Image from "next/image";
-import "swiper/css";
-import { Swiper, SwiperSlide } from "swiper/react";
+"use client";
 
-export function ClientTestimonial() {
+import React from "react";
+import Image from "next/image";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+// Import Swiper components and modules
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+
+export  function ClientTestimonial() {
   return (
     <div className="client-testimonial">
       <Swiper
+        modules={[Autoplay, Navigation, Pagination]}
+        loop={true}
         slidesPerView={3.5}
         spaceBetween={30}
-        pagination={{
-          clickable: true
-        }}
         navigation={true}
-        className="mySwiper"
+        pagination={{ clickable: true }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false
+        }}
         breakpoints={{
-          // when window width is >= 320px (mobile)
           320: {
             slidesPerView: 1.1,
             spaceBetween: 20
           },
-          // when window width is >= 768px (tablet)
           768: {
             slidesPerView: 2.5,
             spaceBetween: 25
           },
-          // when window width is >= 1024px (desktop)
           1024: {
             slidesPerView: 3.5,
             spaceBetween: 30
           }
         }}
       >
-        <SwiperSlide>
+   <SwiperSlide>
           <div className="item">
             <Image src="/images/quote.svg" alt="icon" width={80} height={59} />
             <p>"Working with Dotoli Digital was a game-changer for our property listings. The ads, the VR walkthroughs, the lead quality—everything improved within weeks!"</p>
