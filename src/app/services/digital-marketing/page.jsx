@@ -107,7 +107,7 @@ export default function Page() {
       <ServiceDetailsSection
         img="/images/x5.webp"
         heading="Ranking High-Volume Keywords in Top 10"
-        text="This keyword performance snapshot highlights multiple high-volume keywords currently ranking in the top 10 search positions. The keywords have monthly search volumes ranging from 1.9K to 4.4K and keyword difficulty (KD) scores between 38 and 50, indicating moderate competition. Traffic percentages, although small, reflect consistent visibility. These metrics demonstrate an effective SEO strategy targeting commercial intent queries with strong potential for scaling organic traffic."
+        text="This keyword performance snapshot highalights multiple high-volume keywords currently ranking in the top 10 search positions. The keywords have monthly search volumes ranging from 1.9K to 4.4K and keyword difficulty (KD) scores between 38 and 50, indicating moderate competition. Traffic percentages, although small, reflect consistent visibility. These metrics demonstrate an effective SEO strategy targeting commercial intent queries with strong potential for scaling organic traffic."
       />
 
       <ServiceDetailsSection

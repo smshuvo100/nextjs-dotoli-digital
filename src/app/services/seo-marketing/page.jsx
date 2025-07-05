@@ -1,9 +1,12 @@
 "use client";
+
+import { useState } from "react";
 import Footer from "../../components/Footer";
 import { HeroAllSection } from "../../components/HeroAllSection";
 import PopupForm from "../../components/PopupForm";
 import { ServiceDetailsSection } from "../../components/ServiceDetailsSection";
-export default function page() {
+export default function Page() {
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <>
       {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
@@ -11,21 +14,11 @@ export default function page() {
         id="secrion1"
         title1="Expert SEO Marketing"
         title2="Services That Deliver Results"
-        description={`Our SEO marketing services are designed to improve your search engine rankings, increase organic traffic, and convert visitors into customers. Let us help you dominate search results.`}
+        description={`Our SEO marketing services are designed to improve your search engine rankings,<br/> increase organic traffic, and convert visitors into customers. Let us help you dominate search results.`}
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
       />
-
-      {/* <PortfolioLightbox
-            img1="/images/dm1.webp"
-            img2="/images/dm2.webp"
-            img3="/images/dm3.webp"
-            img4="/images/dm4.webp"
-            img5="/images/dm5.webp"
-            img6="/images/dm6.webp"
-            img7="/images/dm7.webp"
-            img8="/images/dm8.webp"
-          /> */}
+      
       <ServiceDetailsSection
         img="/images/x1.webp"
         heading="Growth in Organic Keywords Across Multiple Assets"
