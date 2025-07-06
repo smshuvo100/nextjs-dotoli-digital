@@ -89,19 +89,16 @@ function Header() {
 
               <div className="socials-m">
                 <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
-                  <Image src="/images/dribble.svg" alt="Dribbble" width={64} height={64} />
+                  <Image src="/images/linkedin.svg" alt="linkedin" width={64} height={64} />
                 </a>
                 <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
-                  <Image src="/images/linkedin.svg" alt="LinkedIn" width={64} height={64} />
+                  <Image src="/images/instagram.svg" alt="instagram" width={64} height={64} />
                 </a>
                 <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
-                  <Image src="/images/instagram.svg" alt="Instagram" width={64} height={64} />
+                  <Image src="/images/youtube1.svg" alt="youtube1" width={64} height={64} />
                 </a>
                 <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
-                  <Image src="/images/behance.svg" alt="Behance" width={64} height={64} />
-                </a>
-                <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
-                  <Image src="/images/facebook.svg" alt="Facebook" width={64} height={64} />
+                  <Image src="/images/facebook.svg" alt="facebook" width={64} height={64} />
                 </a>
               </div>
             </div>
