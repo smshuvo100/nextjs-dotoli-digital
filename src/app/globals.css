@@ -1674,3 +1674,63 @@ Multi Stap Form
   gap: 5px;
   height: 44px;
 }
+
+
+
+/* 
+======================
+video-section
+======================
+*/
+.video-section {
+  padding: 60px 0;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.video-wrapper1 {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.video-wrapper1 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Tablet View */
+@media (max-width: 991px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 575px) {
+  .video-section {
+    padding: 40px 0;
+  }
+
+  .video-grid {
+    gap: 20px;
+  }
+
+  .video-wrapper1 {
+    border-radius: 6px;
+  }
+}
+

@@ -3,9 +3,20 @@ import { useState } from "react";
 import Footer from "../../components/Footer";
 import { HeroAllSection } from "../../components/HeroAllSection";
 import PopupForm from "../../components/PopupForm";
-import { PortfolioImage } from "../../components/PortfolioImage";
+
 export default function Page() {
   const [showPopup, setShowPopup] = useState(false);
+
+  const videos = [
+    "https://www.youtube.com/embed/awsaNuzyaXA",
+    "https://www.youtube.com/embed/AKz9ut5InkQ",
+    "https://www.youtube.com/embed/7huT67VBgWc",
+    "https://www.youtube.com/embed/26OqPm5L8uU",
+    "https://www.youtube.com/embed/UKHBKOHOIaQ",
+    "https://www.youtube.com/embed/PBbVQ5OnarY",
+    "https://www.youtube.com/embed/zYLLvOym6AI"
+  ];
+
   return (
     <>
       {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
@@ -17,17 +28,25 @@ export default function Page() {
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
       />
-      <PortfolioImage
-        img1="/images/project-1.webp"
-        img2="/images/project-2.webp"
-        img3="/images/project-3.webp"
-        img4="/images/project-4.webp"
-        img5="/images/project-5.webp"
-        img6="/images/project-6.webp"
-        img7="/images/project-7.webp"
-        img8="/images/project-8.webp"
-        img9="/images/project-4.webp"
-      />
+
+      <section className="video-section">
+        <div className="container">
+          <div className="video-grid">
+            {videos.map((url, index) => (
+              <div key={index} className="video-wrapper1">
+                <iframe
+                  src={url}
+                  title={`YouTube video ${index + 1}`}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   );
