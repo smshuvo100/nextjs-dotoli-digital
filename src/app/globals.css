@@ -1441,30 +1441,31 @@ section.dribbble-sec {
   sm gallery
 ===============================================
 */
-.sm-featured-demos.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+/* -----------------------------------------
+   Masonry gallery
+----------------------------------------- */
+.sm-featured-demos.masonry-3-col {
+  column-count: 3;          /* number of masonry columns */
+  column-gap: 30px;         /* same gap you had before   */
 }
 
-.sm-thumbaa {
-  position: relative;
-  height: 650px;
-  overflow: hidden;
+.sm-featured-demos.masonry-3-col .item {
+  break-inside: avoid;      /* prevent a tile split */
+  margin-bottom: 30px;      /* vertical gap */
+  cursor: pointer;
   border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 0 30px rgba(29, 28, 31, 0.2);
 }
 
-.sm-thumbaa img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translateY(0);
+/* Responsive: 2 columns on tablets, 1 on mobile */
+@media (max-width: 1024px) {
+  .sm-featured-demos.masonry-3-col { column-count: 2; }
+}
+@media (max-width: 640px) {
+  .sm-featured-demos.masonry-3-col { column-count: 1; }
 }
 
-.c-pointer {
-  cursor: pointer;
-}
 
 /* 
 ======================

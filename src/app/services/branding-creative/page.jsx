@@ -3,7 +3,7 @@ import { useState } from "react";
 import Footer from "../../components/Footer";
 import { HeroAllSection } from "../../components/HeroAllSection";
 import PopupForm from "../../components/PopupForm";
-import { PortfolioImage } from "../../components/PortfolioImage";
+import { PortfolioLightbox } from "../../components/PortfolioLightbox";
 export default function Page() {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -18,16 +18,19 @@ export default function Page() {
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
       />
-      <PortfolioImage
-        img1="/images/project-1.webp"
-        img2="/images/project-2.webp"
-        img3="/images/project-3.webp"
-        img4="/images/project-4.webp"
-        img5="/images/project-5.webp"
-        img6="/images/project-6.webp"
-        img7="/images/project-7.webp"
-        img8="/images/project-8.webp"
-        img9="/images/project-4.webp"
+      <PortfolioLightbox
+        img1="/images/bx1.png"
+        img4="/images/bx2.png"
+        img3="/images/bx3.png"
+        img2="/images/bx4.png"
+        img5="/images/bx5.png"
+        img6="/images/bx6.png"
+        img7="/images/bx7.png"
+        img8="/images/bxx1.webp"
+        img9="/images/bxx2.webp"
+        img10="/images/bxx3.webp"
+        img11="/images/bxx4.webp"
+        img12="/images/bxx5.webp"
       />
       <Footer />
     </>
