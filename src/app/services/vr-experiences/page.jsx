@@ -14,7 +14,7 @@ export default function Page() {
     "https://www.youtube.com/embed/26OqPm5L8uU",
     "https://www.youtube.com/embed/UKHBKOHOIaQ",
     "https://www.youtube.com/embed/PBbVQ5OnarY",
-    "https://www.youtube.com/embed/zYLLvOym6AI"
+    "https://www.youtube.com/embed/zYLLvOym6AI",
   ];
 
   return (
@@ -28,6 +28,24 @@ export default function Page() {
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
       />
+
+      {/*  
+      do iframe in this link https://tours.tommycrivello.com/stratford/ full width
+
+      */}
+
+      <section className="iframe-section">
+        <iframe
+          src="https://tours.tommycrivello.com/stratford/"
+          title="Virtual Tour - Stratford"
+          style={{
+            width: "100%",
+            height: "100vh",
+            border: "none",
+          }}
+          allowFullScreen
+        ></iframe>
+      </section>
 
       <section className="video-section">
         <div className="container">
