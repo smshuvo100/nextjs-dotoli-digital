@@ -6,10 +6,14 @@ import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import { ThemeToggle } from "./ThemeToggle";
 
 function Header() {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const closeMenu = () => setIsMenuOpen(false);
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    setDropdownOpen(false);
+  };
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -17,7 +21,18 @@ function Header() {
     };
 
     document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
+
+    // ✅ Handle scroll locking
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
   }, [isMenuOpen]);
 
   return (
@@ -59,11 +74,40 @@ function Header() {
                     About Us
                   </Link>
                 </li>
-                <li>
-                  <Link href="/services" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
-                    Services
-                  </Link>
+
+                <li className="menu-dropdown">
+                  <div className="services-link-wrapper">
+                    <Link
+                      href="/services"
+                      className="title-1 menu-link"
+                      onClick={closeMenu}
+                      tabIndex={isMenuOpen ? 0 : -1}
+                    >
+                      Services
+                    </Link>
+                    <button
+                      className="dropdown-toggle-btn"
+                      onClick={() => setDropdownOpen(!dropdownOpen)}
+                      tabIndex={isMenuOpen ? 0 : -1}
+                      aria-label="Toggle Services Dropdown"
+                    >
+                      {dropdownOpen ? "▲" : "▼"}
+                    </button>
+                  </div>
+
+                  {dropdownOpen && (
+                    <ul className="dropdown-list">
+                      <li><Link href="/services/digital-marketing" className="dropdown-link" onClick={closeMenu}>Digital Marketing</Link></li>
+                      <li><Link href="/services/website-development" className="dropdown-link" onClick={closeMenu}>Website Development</Link></li>
+                      <li><Link href="/services/seo-expert" className="dropdown-link" onClick={closeMenu}>SEO Expert</Link></li>
+                      <li><Link href="/services/vr-experiences" className="dropdown-link" onClick={closeMenu}>VR Experiences</Link></li>
+                      <li><Link href="/services/branding-creative" className="dropdown-link" onClick={closeMenu}>Branding & Creative</Link></li>
+                      <li><Link href="/services/crm-automation" className="dropdown-link" onClick={closeMenu}>CRM & Automation</Link></li>
+                      <li><Link href="/services/ai-agents" className="dropdown-link" onClick={closeMenu}>AI Agents & Chatbots</Link></li>
+                    </ul>
+                  )}
                 </li>
+
                 <li>
                   <Link href="/team" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
                     Teams
@@ -88,16 +132,16 @@ function Header() {
               </div>
 
               <div className="socials-m">
-                <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
+                <a className="s-item" target="_blank" href="https://www.linkedin.com/company/dotoli-digital/" tabIndex={isMenuOpen ? 0 : -1}>
                   <Image src="/images/linkedin.svg" alt="linkedin" width={64} height={64} />
                 </a>
-                <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
+                <a className="s-item" target="_blank" href="https://www.instagram.com/dotolidigital/" tabIndex={isMenuOpen ? 0 : -1}>
                   <Image src="/images/instagram.svg" alt="instagram" width={64} height={64} />
                 </a>
-                <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
+                <a className="s-item" target="_blank" href="#" tabIndex={isMenuOpen ? 0 : -1}>
                   <Image src="/images/youtube1.svg" alt="youtube1" width={64} height={64} />
                 </a>
-                <a className="s-item" href="#" tabIndex={isMenuOpen ? 0 : -1}>
+                <a className="s-item" target="_blank" href="https://www.facebook.com/profile.php?id=61578050977417" tabIndex={isMenuOpen ? 0 : -1}>
                   <Image src="/images/facebook.svg" alt="facebook" width={64} height={64} />
                 </a>
               </div>

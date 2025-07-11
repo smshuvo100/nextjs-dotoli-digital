@@ -342,13 +342,21 @@ loading-container
 menu
 =================
 */
+body {
+  overscroll-behavior: contain;
+}
+.mobile-menu {
+ 
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .header-wrapper {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
-  background-color: var(--background);
 }
 .header-wrapper .header {
   display: flex;
@@ -388,10 +396,9 @@ menu
 }
 .mobile-menu {
   position: fixed;
-  top: 70px;
+  top: 0px;
   left: 0;
   width: 100%;
-  height: calc(100vh - 70px);
   background-color: var(--background);
   z-index: 90;
   transition: all 0.3s ease-in-out;
@@ -502,9 +509,11 @@ menu
   flex-wrap: wrap;
   border-radius: 60px;
 }
+.dark .dribbble-sec .dribbble-middle-text img,
 .dark .header-wrapper .header a img {
   filter: brightness(0) saturate(100%) invert(89%) sepia(92%) saturate(1426%) hue-rotate(169deg) brightness(115%) contrast(98%);
 }
+.dribbble-sec .dribbble-middle-text img,
 .header-wrapper .header a img {
   filter: brightness(0) saturate(100%) invert(24%) sepia(1%) saturate(2881%) hue-rotate(183deg) brightness(93%) contrast(88%);
 }
@@ -533,10 +542,10 @@ menu
   width: 40px;
 }
 .mobile-menu .menu-container {
-  height: calc(100vh - 35px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
 }
 /*ipad*/
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -571,6 +580,69 @@ menu
     margin-top: 60px;
   }
 }
+/* 
+Dropdown Menu
+-----------------
+*/
+.menu-dropdown {
+  margin-bottom: 10px;
+}
+
+.services-link-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--foreground);
+  font-size: 28px;
+  margin-left: 12px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.dropdown-list {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  list-style: none;
+  margin-left: 30px !important;
+}
+
+.dropdown-list li {
+  margin: 0.5rem 0;
+}
+
+.dropdown-link {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+  font-size: 34px;
+  line-height: 45px;
+  text-transform: capitalize;
+  margin-bottom: 0 !important;
+  font-family: var(--font-primary);
+  color: var(--foreground);
+}
+
+.dropdown-link:hover {
+  color: var(--primary);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .dropdown-toggle-btn {
+    font-size: 20px;
+  }
+
+  .dropdown-link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
 /* 
 ===========================
   hero-wrapper
@@ -1088,7 +1160,7 @@ section.hero-wrapper h1.title-1.text-center {
   width: 100%;
   --tw-translate-y: -50%;
   --tw-translate-x: -50%;
-  z-index: 1;
+  z-index: 12;
 }
 section.dribbble-sec {
   position: relative;
@@ -1441,6 +1513,32 @@ section.dribbble-sec {
   sm gallery
 ===============================================
 */
+
+.sm-featured-demos-sec.sm .sm-featured-demos.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+
+.sm-thumbaa {
+  position: relative;
+  height: 650px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(29, 28, 31, 0.2);
+}
+
+.sm-thumbaa img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(0);
+}
+
+.c-pointer {
+  cursor: pointer;
+}
 /* -----------------------------------------
    Masonry gallery
 ----------------------------------------- */

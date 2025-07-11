@@ -47,7 +47,7 @@ export function PortfolioImage({ ...images }) {
   }, [imagesArray]);
 
   return (
-    <section className="sm-featured-demos-sec">
+    <section className="sm-featured-demos-sec sm">
       <div className="container">
         <div className="sm-featured-demos grid-3">
           {imagesArray.map((src, index) => (
