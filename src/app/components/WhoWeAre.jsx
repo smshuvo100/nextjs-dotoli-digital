@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 
-export function WhoWeAre({ title1, title2, paragraph, btn_text, btn_link }) {
+export function WhoWeAre({ title1, title2, paragraph, btn_text, btn_link, img }) {
   const whoWeAreRef = useRef(null);
   const text1Ref = useRef(null);
   const text2Ref = useRef(null);
@@ -80,8 +80,8 @@ export function WhoWeAre({ title1, title2, paragraph, btn_text, btn_link }) {
 
             <div className="right-text">
               <div className="img-box">
-                {/* kimg */}
-                <Image src="/images/kimg.png" alt="loftloom" width={300} height={300} />
+                
+                <Image src={`/images/${img}`} alt="loftloom" width={300} height={300} />
               </div>
             </div>
           </div>

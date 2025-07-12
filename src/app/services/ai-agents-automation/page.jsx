@@ -13,14 +13,14 @@ export default function Page() {
       {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
 
       <HeroAllSection
-        id="section1"
+       id="team-hero"
         title1="AI-Powered Agents That"
         title2="Engage, Qualify With You."
         description={`We build intelligent AI agents and chatbots powered by tools like Make.com, Zapier,<br /> and n8n—designed to engage leads, qualify prospects, and automate<br /> conversations 24/7 while staying true to your brand voice.`}
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
       />
-
+      <div id="team-hero"></div>
       {/* 
       <Link href="/contact">Contact Us</Link>
       <PortfolioLightbox

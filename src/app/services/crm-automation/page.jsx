@@ -10,13 +10,14 @@ export default function Page() {
     <>
       {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
-        id="secrion1"
+        id={"team-hero"}
         title1="Automate Success: "
         title2="Smart CRM Solutions."
         description={`Transform your customer management with tailored CRM systemsand<br/> intelligent automation. We integrate technology that saves you time,<br/> nurtures leads, and delivers personalized experiences at scale.`}
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
       />
+      <div id="team-hero"></div>
       {/* <PortfolioImage
         img1="/images/project-1.webp"
         img2="/images/project-2.webp"

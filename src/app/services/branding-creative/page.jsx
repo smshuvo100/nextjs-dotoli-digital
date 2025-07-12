@@ -11,13 +11,14 @@ export default function Page() {
     <>
       {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
-        id="secrion1"
+        id="team-hero"
         title1="Branding & Creative - Design"
         title2=" That Inspires & Influences."
         description={`From concept to reality, we craft visual identities, graphics, and videos<br/> that captivate your audience. Our creative team blends artistic<br/> finesse with strategic insight to elevate your brand above the rest.`}
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
       />
+      <div id="team-hero"></div>
       <PortfolioLightbox
         img1="/images/bx1.png"
         img4="/images/bx2.png"

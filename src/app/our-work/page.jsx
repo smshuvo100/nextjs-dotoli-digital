@@ -6,19 +6,22 @@ import { LogoTracker } from "../components/LogoTracker";
 import PopupForm from "../components/PopupForm";
 import { PortfolioImage } from "../components/PortfolioImage";
 import { ServiceDetailsSection } from "../components/ServiceDetailsSection";
+import { ClientTestimonial } from "../components/ClientTestimonial";
 export default function page() {
   const [showPopup, setShowPopup] = useState(false);
   return (
     <>
       {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
-        id={"sm-bg-text-sec"}
+        id={"team-hero"}
         title1={"Work that builds trust"}
         title2={"and drives results"}
         description={`Explore how we help service businesses stand out,<br/> rank higher, and convert better — through SEO, branding,<br/> and aerial content that moves people.`}
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
+        
       />
+       <div id="team-hero"></div>
       {/* ai-agents-automation */}
       <ServiceDetailsSection
         img="/images/ia2.webp"
@@ -77,6 +80,13 @@ export default function page() {
       {/* branding-creative */}
       {/* website-development */}
       <PortfolioImage img1="/images/w2.webp" img2="/images/w1.webp" img3="/images/w3.webp" img4="/images/w4.webp" img5="/images/w5.webp" img6="/images/w6.webp" />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <ClientTestimonial />
 
       <LogoTracker />
       <Footer />

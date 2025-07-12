@@ -15,14 +15,14 @@ export default function Page() {
     <>
       {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
-        id="secrion1"
+        id={"team-hero"}
         title1="Data-Driven Marketing that"
         title2="Dominates Your Market."
         description={`From SEO to social media, our expert team leverages AI insights <br/>and creative strategy to grow your traffic, leads, and revenue.<br/> We don't just run campaigns - we craft digital success stories.`}
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
       />
-
+      <div id="team-hero"></div>
       {/* <PortfolioLightbox
         img1="/images/dm1.webp"
         img2="/images/dm2.webp"

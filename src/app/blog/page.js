@@ -20,7 +20,9 @@ export default function BlogPage() {
         description={`Explore our latest thoughts on digital marketing, branding, web development,<br/> and innovation. Stay informed, stay inspired.`}
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
+        id={"team-hero"}
       />
+      <div id="team-hero"></div>
       <main className="blog-layout">
         <div className="container">
           <div className="blog-content">

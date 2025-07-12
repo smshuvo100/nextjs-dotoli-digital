@@ -21,14 +21,14 @@ export default function Page() {
     <>
       {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
-        id="secrion1"
+        id={"team-hero"}
         title1="Immersive VR Experiences -"
         title2="Step Into the Future."
         description={`Wow your audience with fully immersive virtual reality experiences. From virtual<br/> showrooms to interactive product demos, our VR solutions create<br/> unforgettable engagements that set you apart from the competition.`}
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
       />
-
+      <div id="team-hero"></div>
       {/*  
       do iframe in this link https://tours.tommycrivello.com/stratford/ full width
 

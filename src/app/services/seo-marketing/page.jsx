@@ -11,14 +11,14 @@ export default function Page() {
     <>
       {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
-        id="secrion1"
+        id={"team-hero"}
         title1="Expert SEO Marketing"
         title2="Services That Deliver Results"
         description={`Our SEO marketing services are designed to improve your search engine rankings,<br/> increase organic traffic, and convert visitors into customers. Let us help you dominate search results.`}
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
       />
-      
+      <div id="team-hero"></div>
       <ServiceDetailsSection
         img="/images/x1.webp"
         heading="Growth in Organic Keywords Across Multiple Assets"

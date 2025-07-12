@@ -1060,7 +1060,7 @@ section.hero-wrapper h1.title-1.text-center {
   padding: 0;
 }
 .client-testimonial .swiper-slide .client-info {
-  margin-top: 80px;
+  margin-top: 35px;
 }
 .client-testimonial .swiper-slide {
   /* border: 1px solid #fff; */
@@ -1698,10 +1698,10 @@ popup
   cursor: pointer;
 }
 .popup-content .sm-title {
-  font-size: 28px;
+  font-size: 24px;
   line-height: 50px;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
   margin-top: 20px;
 }
 .popup-content p.text-1 {
@@ -1966,4 +1966,22 @@ main.blog-single .container article p {
 }
 .blog-single-header .hero-wrapper .container {
   max-width: 1200px;
+}
+.scroll-next-sec {
+  animation: moveDown 1s infinite ease-in-out;
+}
+ 
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

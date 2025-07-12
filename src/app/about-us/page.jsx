@@ -44,6 +44,7 @@ export default function About() {
       <WhoWeAre
         title1="Why Clients"
         title2="Choose Us"
+        img="kimg.png"
         paragraph={`<ul>
         <li><strong>Real-Industry Insight & Elite Execution — </strong>Jared’s real-estate expertise meets our team’s digital firepower.</li>
         <li><strong>AI-Native Thinking — </strong>We’re not adapting to AI; we’re built on it.</li>
@@ -55,6 +56,7 @@ export default function About() {
       <WhoWeAre
         title1="What We "
         title2="Do Best"
+        img="qvv1.webp"
         paragraph={`<ul>
         <li>Performance Marketing</li>
         <li>AI Automation & Workflows</li>
@@ -68,12 +70,14 @@ export default function About() {
       <WhoWeAre
         title1="Meet the Minds"
         title2=" Behind the Magic"
+        img="qvv2.webp"
         paragraph={`We're a hands-on team that thrives on building, testing, optimizing, and growing brands through AI, automation, and creativity.Jared leads with vision. The team brings it to life.`}
       />
 
       <WhoWeAre
         title1="Let's Build "
         title2="Something That Lasts"
+        img="qvv3.webp"
         paragraph={`If you're looking for a team that blends creativity with conversion—and automation with real human insight—you’ve just found your people.`}
         btn_text="Book a Free Consultation"
         btn_link="/contact"

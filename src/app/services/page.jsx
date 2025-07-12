@@ -11,14 +11,14 @@ export default function page() {
     <>
       {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
-        id={"secrion1"}
+        id={"team-hero"}
         title1={"Elite Digital Services,"}
         title2={"Powered by Innovation"}
         description={`Our agency blends creative brilliance with technological innovation. Explore our suite of services,<br/> each tailored to accelerate your growth and automate success.`}
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
       />
-
+      <div id="team-hero"></div>
       <ServicesSection
         title={`Digital <br />Marketing`}
         btn_link={"/services/digital-marketing"}

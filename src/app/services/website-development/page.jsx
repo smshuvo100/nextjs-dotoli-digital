@@ -14,13 +14,14 @@ export default function Page() {
     <>
       {showPopup && <PopupForm onClose={() => setShowPopup(false)} />}
       <HeroAllSection
-        id="secrion1"
+        id={"team-hero"}
         title1="Building Stunning "
         title2="Websites that Convert"
         description={`Our web development team crafts high-end, mobile-responsive websites<br/> that not only look exceptional but also drive business growth.Specializing<br/>   in sitesthat wow investors and customers alike.`}
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
       />
+      <div id="team-hero"></div>
       <PortfolioImage
         img1="/images/w2.webp"
         img2="/images/w1.webp"

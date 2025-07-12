@@ -183,7 +183,10 @@ export default function ContactPage() {
         description={`Need better visibility, stronger branding, <br/> or scroll-stopping video? Tell us what you<br/> need — we'll help you get there.`}
         btn_text="Book a Free Strategy Call"
         onBtnClick={() => setShowPopup(true)}
+        id={"team-hero"}
+        
       />
+      <div id="team-hero"></div>
       <TextCounterSection text="Start your project — or just start the conversation." paragraph="Tell us what’s not working — and where you want to go. We’ll respond with clear steps to help." />
 
       <section className="contact-sec">

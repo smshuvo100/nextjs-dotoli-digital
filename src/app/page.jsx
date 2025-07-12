@@ -96,12 +96,12 @@ export default function Home() {
       <WhoWeAre
         title1={"Who"}
         title2={"We Are"}
+        img="kimg.png"
         paragraph={`Dotoli Digital is a Florida-based team of digital visionaries and strategists.  Since our inception, we've partnered with industry leaders and ambitiousbrands to deliver bespoke marketing solutions powered by AI and creativity.`}
         btn_text={"Meet the Team"}
         btn_link={"/team"}
       />
       <CounterSection />
-   {/*    <PageTitle /> */}
       <ClientTestimonial />
       <NewsTracker />
       <DribbbleSection />
