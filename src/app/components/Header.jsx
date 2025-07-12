@@ -37,7 +37,7 @@ function Header() {
 
   return (
     <>
-      <section className="header-wrapper">
+      <section className={`header-wrapper ${isMenuOpen ? "active" : ""}`}>
         <div className="container">
           <header className="header">
             <Link href="/">
@@ -111,6 +111,11 @@ function Header() {
                 <li>
                   <Link href="/team" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
                     Teams
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog" className="title-1 menu-link" onClick={closeMenu} tabIndex={isMenuOpen ? 0 : -1}>
+                    Blog
                   </Link>
                 </li>
                 <li>

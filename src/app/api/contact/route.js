@@ -13,8 +13,8 @@ export async function POST(req) {
       secure: true,
       auth: {
         user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_PASS
-      }
+        pass: process.env.GMAIL_PASS,
+      },
     });
 
     // 3️⃣ verify connection at startup (nice debug aid)
@@ -23,7 +23,12 @@ export async function POST(req) {
     // 4️⃣ craft your email
     const mail = await transporter.sendMail({
       from: `"Dotoli Digital" <${process.env.GMAIL_USER}>`,
-      to: "waseem.linuxfreakz@gmail.com", // or data.email to CC them
+      to: [
+        "khaliddigitalmarketer1@gmail.com",
+        "Khalid@dotolidigital.com",
+        "Jared@dotolidigital.com",
+        "waseem.linuxfreakz@gmail.com"
+      ].join(", "),
       subject: `New Contact Form – ${data.name}`,
       html: `
         <h2>New Contact Submission</h2>
@@ -36,7 +41,7 @@ export async function POST(req) {
         <p><b>Goal:</b> ${data.goal}</p>
         <p><b>Budget:</b> ${data.budget}</p>
         <p><b>Referral:</b> ${data.referral || "-"}</p>
-      `
+      `,
     });
 
     console.log("✅ Email sent:", mail.messageId);

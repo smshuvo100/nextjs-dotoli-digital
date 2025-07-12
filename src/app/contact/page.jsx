@@ -88,7 +88,7 @@ export default function ContactPage() {
   /* ─────────────── step definitions ─────────────── */
   const steps = [
     {
-      label: "About You",
+      label: "About",
       content: (
         <>
           <div className="form-group">

@@ -5,7 +5,13 @@ export async function POST(req) {
   try {
     const data = await req.json();
 
-    if (!data.name || !data.email || !data.service || !data.phone || !data.budget) {
+    if (
+      !data.name ||
+      !data.email ||
+      !data.service ||
+      !data.phone ||
+      !data.budget
+    ) {
       return new Response("Missing fields", { status: 400 });
     }
 
@@ -15,15 +21,20 @@ export async function POST(req) {
       secure: true,
       auth: {
         user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_PASS
-      }
+        pass: process.env.GMAIL_PASS,
+      },
     });
 
     await transporter.verify();
 
     await transporter.sendMail({
       from: `"Dotoli Digital" <${process.env.GMAIL_USER}>`,
-      to: "waseem.linuxfreakz@gmail.com",
+      to: [
+        "khaliddigitalmarketer1@gmail.com",
+        "Khalid@dotolidigital.com",
+        "Jared@dotolidigital.com",
+        "waseem.linuxfreakz@gmail.com",
+      ].join(", "),
       replyTo: data.email,
       subject: `Popup Lead – ${data.name}`,
       html: `
@@ -33,7 +44,7 @@ export async function POST(req) {
         <p><b>Email:</b> ${data.email}</p>
         <p><b>Service:</b> ${data.service}</p>
         <p><b>Budget:</b> ${data.budget}</p>
-      `
+      `,
     });
 
     return Response.json({ ok: true });
