@@ -25,8 +25,8 @@ function Footer() {
           /*  markers: true, */
           start: "top 70%",
           end: "bottom 100%",
-          scrub: 2
-        }
+          scrub: 2,
+        },
       });
     },
     { scope: recentWorkSecRef }
@@ -45,8 +45,8 @@ function Footer() {
           /*      markers: true, */
           start: "top 70%",
           end: "bottom 100%",
-          scrub: 2
-        }
+          scrub: 2,
+        },
       });
     },
     { scope: recentWorkSecRef }
@@ -77,11 +77,12 @@ function Footer() {
       <footer className="footer">
         <div className="container">
           <div className="boxa">
-            <a className="f-link sm1" href="">
+            <a className="f-link sm1" href="mailto:info@dotolidigital.com">
               <p className="ft1">Email</p>
               <p className="ft2">info@dotolidigital.com</p>
             </a>
-            <a className="f-link sm2" href="">
+
+            <a className="f-link sm2" href="tel:+19543838093">
               <p className="ft1">Call</p>
               <p className="ft2">(954) 383-8093</p>
             </a>

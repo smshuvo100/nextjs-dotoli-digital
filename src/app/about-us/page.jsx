@@ -36,11 +36,11 @@ export default function About() {
           • <strong>AI-Native Thinking — </strong>We’re not adapting to AI; we’re built on it.<br />
           • <strong>Flexible, Transparent, Fast — </strong>We move with clarity and urgency to deliver results, not fluff.
       */}
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <WhoWeAre
         title1="Why Clients"
         title2="Choose Us"
@@ -54,6 +54,7 @@ export default function About() {
 
       {/* ───── WHAT WE DO BEST (simple title component) ───── */}
       <WhoWeAre
+        smclass={"sm-right-wwa"}
         title1="What We "
         title2="Do Best"
         img="qvv1.webp"
@@ -75,6 +76,7 @@ export default function About() {
       />
 
       <WhoWeAre
+        smclass={"sm-right-wwa"}
         title1="Let's Build "
         title2="Something That Lasts"
         img="qvv3.webp"
@@ -83,10 +85,10 @@ export default function About() {
         btn_link="/contact"
       />
 
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <br />
+      <br />
 
       {/* ───── COUNTERS / METRICS ───── */}
       <CounterSection />

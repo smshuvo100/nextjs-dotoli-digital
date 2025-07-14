@@ -7,12 +7,20 @@ export default function PopupForm({ onClose }) {
   const overlayRef = useRef(null);
 
   useEffect(() => {
+    document.body.classList.add("popup-open");
+    return () => {
+      document.body.classList.remove("popup-open");
+    };
+  }, []);
+
+  useEffect(() => {
     const esc = (e) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", esc);
     return () => window.removeEventListener("keydown", esc);
   }, [onClose]);
 
-  const handleOverlayClick = (e) => e.target === overlayRef.current && onClose();
+  const handleOverlayClick = (e) =>
+    e.target === overlayRef.current && onClose();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -21,7 +29,7 @@ export default function PopupForm({ onClose }) {
     const ok = await fetch("/api/popup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(Object.fromEntries(new FormData(e.target)))
+      body: JSON.stringify(Object.fromEntries(new FormData(e.target))),
     }).then((r) => r.ok);
 
     if (ok) {
@@ -33,14 +41,20 @@ export default function PopupForm({ onClose }) {
   };
 
   return (
-    <div className="popup-overlay" ref={overlayRef} onClick={handleOverlayClick}>
+    <div
+      className="popup-overlay"
+      ref={overlayRef}
+      onClick={handleOverlayClick}
+    >
       <div className="popup-content">
         <button className="popup-close" onClick={onClose}>
           ×
         </button>
 
         <h2 className="sm-title">Need a Trusted Digital Partner? We’re In.</h2>
-        <p className="text-1">Tell us what you need—we’ll show you how we can help.</p>
+        <p className="text-1">
+          Tell us what you need—we’ll show you how we can help.
+        </p>
 
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
@@ -50,12 +64,24 @@ export default function PopupForm({ onClose }) {
 
           <div className="form-group">
             <label htmlFor="phone">Phone Number*</label>
-            <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890" />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="(123) 456-7890"
+            />
           </div>
 
           <div className="form-group">
             <label htmlFor="email">Email Address*</label>
-            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="you@example.com"
+            />
           </div>
 
           <div className="form-group">
@@ -84,14 +110,14 @@ export default function PopupForm({ onClose }) {
             </select>
           </div>
 
-     
-
           <div className="btn form-btn">
             <button type="submit">Book My Free Consultation</button>
           </div>
 
           {status && <p style={{ marginTop: "1rem" }}>{status}</p>}
-          <p className="micro-trust">🔒 100% privacy. No spam. Just real conversations.</p>
+          <p className="micro-trust">
+            🔒 100% privacy. No spam. Just real conversations.
+          </p>
         </form>
       </div>
     </div>
