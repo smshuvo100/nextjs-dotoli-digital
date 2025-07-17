@@ -20,18 +20,27 @@ export default function Page() {
       />
       <div id="team-hero"></div>
       <PortfolioLightbox
-        img1="/images/bx1.png"
-        img4="/images/bx2.png"
-        img3="/images/bx3.png"
-        img2="/images/bx4.png"
-        img5="/images/bx5.png"
-        img6="/images/bx6.png"
-        img7="/images/bx7.png"
-        img8="/images/bxx1.webp"
-        img9="/images/bxx2.webp"
-        img10="/images/bxx3.webp"
-        img11="/images/bxx4.webp"
-        img12="/images/bxx5.webp"
+        
+        img3="/images/bxx4.webp"
+        img4="/images/bxx5.webp"
+        img5="/images/kqpa1.webp"
+        img6="/images/kqpa2.webp"
+        img7="/images/kqpa3.webp"
+        img8="/images/kqpa4.webp"
+        img9="/images/kqpa5.webp"
+        img10="/images/kqpa6.webp"
+        img11="/images/kqpa7.webp"
+        img12="/images/kqpa8.webp"
+        img13="/images/kqpa9.webp"
+        img14="/images/kqpa10.webp"
+        img15="/images/kqpa11.webp"
+        img16="/images/kqpa12.webp"
+        img17="/images/kqpa13.webp"
+        img18="/images/kqpa14.webp"
+        img19="/images/kqpa15.webp"
+        img20="/images/kqpa16.webp"
+        img1="/images/bxx2.webp"
+        img2="/images/bxx3.webp"
       />
       <Footer />
     </>

@@ -42,6 +42,8 @@ export default function Page() {
         img17="/images/project-5.webp"
         img18="/images/project-6.webp"
         img19="/images/project-7.webp"
+        img20="/images/project-last.webp"
+        
       />
       <Footer />
     </>
