@@ -56,7 +56,7 @@ export default function Home() {
         description={"Our SEO services are designed to improve your search engine rankings, increase organic traffic, and convert visitors into customers. Let us help you dominate search results."}
         images={"loftloom-main-landscape.webp"}
         btn_text={"Explore work"}
-        btn_link={"/services/seo-marketing"}
+        btn_link={"/services/seo-expert"}
       />
 
       <LeftImgSection

@@ -38,7 +38,7 @@ export default function page() {
 
       <ServicesSection
         title={`Seo <br />Expert`}
-        btn_link={"/services/seo-marketing"}
+        btn_link={"/services/seo-expert"}
         btn_text={"View project"}
         description={`Our SEO services are designed to improve your search engine rankings, increase organic traffic, and convert visitors into customers. Let us help you dominate search results.`}
       />

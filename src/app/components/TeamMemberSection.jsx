@@ -40,30 +40,32 @@ export function TeamMemberSection() {
             }
           }}
         >
-          <SwiperSlide>
-            <div className="item">
-              <Image src="/images/people-1.webp" alt="member" width={1000} height={1200} />
-              <div className="text">
-                <p className="name">Albert Mizuno</p>
-                <p className="position">Founder of The Mizuno</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
+           <SwiperSlide>
             <div className="item">
               <Image src="/images/people-2.webp" alt="member" width={1000} height={1200} />
               <div className="text">
-                <p className="name">Alex Janssen</p>
-                <p className="position">SEO Lead</p>
+                <p className="name">Jared Dotoli</p>
+                <p className="position">CEO</p>
               </div>
             </div>
           </SwiperSlide>
+          
+          <SwiperSlide>
+            <div className="item">
+              <Image src="/images/name.jpg" alt="member" width={1000} height={1200} />
+              <div className="text">
+                <p className="name">Mohammad Khalid</p>
+                <p className="position">Assistant Manager</p>
+              </div>
+            </div>
+          </SwiperSlide>
+         
           <SwiperSlide>
             <div className="item">
               <Image src="/images/people-3.webp" alt="member" width={1000} height={1200} />
               <div className="text">
-                <p className="name">Mila Bakker</p>
-                <p className="position">Brand Strategist</p>
+                <p className="name">Waseem Ahmed Tunio</p>
+                <p className="position">Full Stack Developer</p>
               </div>
             </div>
           </SwiperSlide>
